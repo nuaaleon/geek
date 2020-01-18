@@ -1,0 +1,389 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                13讲结构体及其方法的使用法门
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/c3/0c/c35a358abc2e24a66e5338b07d5ab70c.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>我们都知道，结构体类型表示的是实实在在的数据结构。一个结构体类型可以包含若干个字段，每个字段通常都需要有确切的名字和类型。</p><h2>前导内容：结构体类型基础知识</h2><p>当然了，结构体类型也可以不包含任何字段，这样并不是没有意义的，因为我们还可以为类型关联上一些方法，这里你可以把方法看做是函数的特殊版本。</p><p>函数是独立的程序实体。我们可以声明有名字的函数，也可以声明没名字的函数，还可以把它们当做普通的值传来传去。我们能把具有相同签名的函数抽象成独立的函数类型，以作为一组输入、输出（或者说一类逻辑组件）的代表。</p><p>方法却不同，它需要有名字，不能被当作值来看待，最重要的是，它必须隶属于某一个类型。方法所属的类型会通过其声明中的接收者（receiver）声明体现出来。</p><p>接收者声明就是在关键字<code>func</code>和方法名称之间的圆括号包裹起来的内容，其中必须包含确切的名称和类型字面量。</p><p><strong>接收者的类型其实就是当前方法所属的类型，而接收者的名称，则用于在当前方法中引用它所属的类型的当前值。</strong></p><p>我们举个例子来看一下。</p><pre><code>// AnimalCategory 代表动物分类学中的基本分类法。
+type AnimalCategory struct {
+	kingdom string // 界。
+	phylum string // 门。
+	class  string // 纲。
+	order  string // 目。
+	family string // 科。
+	genus  string // 属。
+	species string // 种。
+}
+
+func (ac AnimalCategory) String() string {
+	return fmt.Sprintf(&quot;%s%s%s%s%s%s%s&quot;,
+		ac.kingdom, ac.phylum, ac.class, ac.order,
+		ac.family, ac.genus, ac.species)
+}
+</code></pre><p>结构体类型<code>AnimalCategory</code>代表了动物的基本分类法，其中有7个<code>string</code>类型的字段，分别表示各个等级的分类。</p><!-- [[[read_end]]] --><p>下边有个名叫<code>String</code>的方法，从它的接收者声明可以看出它隶属于<code>AnimalCategory</code>类型。</p><p>通过该方法的接收者名称<code>ac</code>，我们可以在其中引用到当前值的任何一个字段，或者调用到当前值的任何一个方法（也包括<code>String</code>方法自己）。</p><p>这个<code>String</code>方法的功能是提供当前值的字符串表示形式，其中的各个等级分类会按照从大到小的顺序排列。使用时，我们可以这样表示：</p><pre><code>category := AnimalCategory{species: &quot;cat&quot;}
+fmt.Printf(&quot;The animal category: %s\n&quot;, category)
+</code></pre><p>这里，我用字面量初始化了一个<code>AnimalCategory</code>类型的值，并把它赋给了变量<code>category</code>。为了不喧宾夺主，我只为其中的<code>species</code>字段指定了字符串值<code>"cat"</code>，该字段代表最末级分类“种”。</p><p>在Go语言中，我们可以通过为一个类型编写名为<code>String</code>的方法，来自定义该类型的字符串表示形式。这个<code>String</code>方法不需要任何参数声明，但需要有一个<code>string</code>类型的结果声明。</p><p>正因为如此，我在调用<code>fmt.Printf</code>函数时，使用占位符<code>%s</code>和<code>category</code>值本身就可以打印出后者的字符串表示形式，而无需显式地调用它的<code>String</code>方法。</p><p><code>fmt.Printf</code>函数会自己去寻找它。此时的打印内容会是<code>The animal category: cat</code>。显而易见，<code>category</code>的<code>String</code>方法成功地引用了当前值的所有字段。</p><blockquote>
+<p><span class="reference">方法隶属的类型其实并不局限于结构体类型，但必须是某个自定义的数据类型，并且不能是任何接口类型。</span></p>
+<p><span class="reference">一个数据类型关联的所有方法，共同组成了该类型的方法集合。同一个方法集合中的方法不能出现重名。并且，如果它们所属的是一个结构体类型，那么它们的名称与该类型中任何字段的名称也不能重复。</span></p>
+<p><span class="reference">我们可以把结构体类型中的一个字段看作是它的一个属性或者一项数据，再把隶属于它的一个方法看作是附加在其中数据之上的一个能力或者一项操作。将属性及其能力（或者说数据及其操作）封装在一起，是面向对象编程（object-oriented programming）的一个主要原则。</span></p>
+<p><span class="reference">Go语言摄取了面向对象编程中的很多优秀特性，同时也推荐这种封装的做法。从这方面看，Go语言其实是支持面向对象编程的，但它选择摒弃了一些在实际运用过程中容易引起程序开发者困惑的特性和规则。</span></p>
+</blockquote><p>现在，让我们再把目光放到结构体类型的字段声明上。我们来看下面的代码：</p><pre><code>type Animal struct {
+	scientificName string // 学名。
+	AnimalCategory    // 动物基本分类。
+}
+</code></pre><p>我声明了一个结构体类型，名叫<code>Animal</code>。它有两个字段。一个是<code>string</code>类型的字段<code>scientificName</code>，代表了动物的学名。而另一个字段声明中只有<code>AnimalCategory</code>，它正是我在前面编写的那个结构体类型的名字。这是什么意思呢？</p><p><strong>那么，我们今天的问题是：<code>Animal</code>类型中的字段声明<code>AnimalCategory</code>代表了什么？</strong></p><p>更宽泛地讲，如果结构体类型的某个字段声明中只有一个类型名，那么该字段代表了什么？</p><p><strong>这个问题的典型回答是</strong>：字段声明<code>AnimalCategory</code>代表了<code>Animal</code>类型的一个嵌入字段。Go语言规范规定，如果一个字段的声明中只有字段的类型名而没有字段的名称，那么它就是一个嵌入字段，也可以被称为匿名字段。我们可以通过此类型变量的名称后跟“.”，再后跟嵌入字段类型的方式引用到该字段。也就是说，嵌入字段的类型既是类型也是名称。</p><h2>问题解析</h2><p>说到引用结构体的嵌入字段，<code>Animal</code>类型有个方法叫<code>Category</code>，它是这么写的：</p><pre><code>func (a Animal) Category() string {
+	return a.AnimalCategory.String()
+}
+</code></pre><p><code>Category</code>方法的接收者类型是<code>Animal</code>，接收者名称是<code>a</code>。在该方法中，我通过表达式<code>a.AnimalCategory</code>选择到了<code>a</code>的这个嵌入字段，然后又选择了该字段的<code>String</code>方法并调用了它。</p><p>顺便提一下，在某个代表变量的标识符的右边加“.”，再加上字段名或方法名的表达式被称为选择表达式，它用来表示选择了该变量的某个字段或者方法。</p><p>这是Go语言规范中的说法，与“引用结构体的某某字段”或“调用结构体的某某方法”的说法是相通的。我在以后会混用这两种说法。</p><p>实际上，把一个结构体类型嵌入到另一个结构体类型中的意义不止如此。嵌入字段的方法集合会被无条件地合并进被嵌入类型的方法集合中。例如下面这种：</p><pre><code>animal := Animal{
+	scientificName: &quot;American Shorthair&quot;,
+	AnimalCategory: category,
+}
+fmt.Printf(&quot;The animal: %s\n&quot;, animal)
+</code></pre><p>我声明了一个<code>Animal</code>类型的变量<code>animal</code>并对它进行初始化。我把字符串值<code>"American Shorthair"</code>赋给它的字段<code>scientificName</code>，并把前面声明过的变量<code>category</code>赋给它的嵌入字段<code>AnimalCategory</code>。</p><p>我在后面使用<code>fmt.Printf</code>函数和<code>%s</code>占位符试图打印<code>animal</code>的字符串表示形式，相当于调用<code>animal</code>的<code>String</code>方法。虽然我们还没有为<code>Animal</code>类型编写<code>String</code>方法，但这样做是没问题的。因为在这里，嵌入字段<code>AnimalCategory</code>的<code>String</code>方法会被当做<code>animal</code>的方法调用。</p><p><strong>那如果我也为<code>Animal</code>类型编写一个<code>String</code>方法呢？这里会调用哪一个呢？</strong></p><p>答案是，<code>animal</code>的<code>String</code>方法会被调用。这时，我们说，嵌入字段<code>AnimalCategory</code>的<code>String</code>方法被“屏蔽”了。注意，只要名称相同，无论这两个方法的签名是否一致，被嵌入类型的方法都会“屏蔽”掉嵌入字段的同名方法。</p><p>类似的，由于我们同样可以像访问被嵌入类型的字段那样，直接访问嵌入字段的字段，所以如果这两个结构体类型里存在同名的字段，那么嵌入字段中的那个字段一定会被“屏蔽”。这与我们在前面讲过的，可重名变量之间可能存在的“屏蔽”现象很相似。</p><p>正因为嵌入字段的字段和方法都可以“嫁接”到被嵌入类型上，所以即使在两个同名的成员一个是字段，另一个是方法的情况下，这种“屏蔽”现象依然会存在。</p><p>不过，即使被屏蔽了，我们仍然可以通过链式的选择表达式，选择到嵌入字段的字段或方法，就像我在<code>Category</code>方法中所做的那样。这种“屏蔽”其实还带来了一些好处。我们看看下面这个<code>Animal</code>类型的<code>String</code>方法的实现：</p><pre><code>func (a Animal) String() string {
+	return fmt.Sprintf(&quot;%s (category: %s)&quot;,
+		a.scientificName, a.AnimalCategory)
+}
+</code></pre><p>在这里，我们把对嵌入字段的<code>String</code>方法的调用结果融入到了<code>Animal</code>类型的同名方法的结果中。这种将同名方法的结果逐层“包装”的手法是很常见和有用的，也算是一种惯用法了。</p><p><img src="https://static001.geekbang.org/resource/image/47/b2/471b42767d0c82af8acd22c13dfd33b2.png" alt=""><br>
+（结构体类型中的嵌入字段）</p><p><strong>最后，我还要提一下多层嵌入的问题。</strong>也就是说，嵌入字段本身也有嵌入字段的情况。请看我声明的<code>Cat</code>类型：</p><pre><code>type Cat struct {
+	name string
+	Animal
+}
+
+func (cat Cat) String() string {
+	return fmt.Sprintf(&quot;%s (category: %s, name: %q)&quot;,
+		cat.scientificName, cat.Animal.AnimalCategory, cat.name)
+}
+</code></pre><p>结构体类型<code>Cat</code>中有一个嵌入字段<code>Animal</code>，而<code>Animal</code>类型还有一个嵌入字段<code>AnimalCategory</code>。</p><p>在这种情况下，“屏蔽”现象会以嵌入的层级为依据，嵌入层级越深的字段或方法越可能被“屏蔽”。</p><p>例如，当我们调用<code>Cat</code>类型值的<code>String</code>方法时，如果该类型确有<code>String</code>方法，那么嵌入字段<code>Animal</code>和<code>AnimalCategory</code>的<code>String</code>方法都会被“屏蔽”。</p><p>如果该类型没有<code>String</code>方法，那么嵌入字段<code>Animal</code>的<code>String</code>方法会被调用，而它的嵌入字段<code>AnimalCategory</code>的<code>String</code>方法仍然会被屏蔽。</p><p>只有当<code>Cat</code>类型和<code>Animal</code>类型都没有<code>String</code>方法的时候，<code>AnimalCategory</code>的<code>String</code>方法菜会被调用。</p><p>最后的最后，如果处于同一个层级的多个嵌入字段拥有同名的字段或方法，那么从被嵌入类型的值那里，选择此名称的时候就会引发一个编译错误，因为编译器无法确定被选择的成员到底是哪一个。</p><p>以上关于嵌入字段的所有示例都在demo29.go中，希望能对你有所帮助。</p><h2>知识扩展</h2><p><strong>问题1：Go语言是用嵌入字段实现了继承吗？</strong></p><p>这里强调一下，Go语言中根本没有继承的概念，它所做的是通过嵌入字段的方式实现了类型之间的组合。这样做的具体原因和理念请见Go语言官网的FAQ中的<a href="https://golang.org/doc/faq#inheritance">Why is there no type inheritance?</a>。</p><p>简单来说，面向对象编程中的继承，其实是通过牺牲一定的代码简洁性来换取可扩展性，而且这种可扩展性是通过侵入的方式来实现的。</p><p>类型之间的组合采用的是非声明的方式，我们不需要显式地声明某个类型实现了某个接口，或者一个类型继承了另一个类型。</p><p>同时，类型组合也是非侵入式的，它不会破坏类型的封装或加重类型之间的耦合。</p><p>我们要做的只是把类型当做字段嵌入进来，然后坐享其成地使用嵌入字段所拥有的一切。如果嵌入字段有哪里不合心意，我们还可以用“包装”或“屏蔽”的方式去调整和优化。</p><p>另外，类型间的组合也是灵活的，我们总是可以通过嵌入字段的方式把一个类型的属性和能力“嫁接”给另一个类型。</p><p>这时候，被嵌入类型也就自然而然地实现了嵌入字段所实现的接口。再者，组合要比继承更加简洁和清晰，Go语言可以轻而易举地通过嵌入多个字段来实现功能强大的类型，却不会有多重继承那样复杂的层次结构和可观的管理成本。</p><p>接口类型之间也可以组合。在Go语言中，接口类型之间的组合甚至更加常见，我们常常以此来扩展接口定义的行为或者标记接口的特征。与此有关的内容我在下一篇文章中再讲。</p><p>在我面试过的众多Go工程师中，有很多人都在说“Go语言用嵌入字段实现了继承”，而且深信不疑。</p><p>要么是他们还在用其他编程语言的视角和理念来看待Go语言，要么就是受到了某些所谓的“Go语言教程”的误导。每当这时，我都忍不住当场纠正他们，并建议他们去看看官网上的解答。</p><p><strong>问题2：值方法和指针方法都是什么意思，有什么区别？</strong></p><p>我们都知道，方法的接收者类型必须是某个自定义的数据类型，而且不能是接口类型或接口的指针类型。所谓的值方法，就是接收者类型是非指针的自定义数据类型的方法。</p><p>比如，我们在前面为<code>AnimalCategory</code>、<code>Animal</code>以及<code>Cat</code>类型声明的那些方法都是值方法。就拿<code>Cat</code>来说，它的<code>String</code>方法的接收者类型就是<code>Cat</code>，一个非指针类型。那什么叫指针类型呢？请看这个方法：</p><pre><code>func (cat *Cat) SetName(name string) {
+	cat.name = name
+}
+</code></pre><p>方法<code>SetName</code>的接收者类型是<code>*Cat</code>。<code>Cat</code>左边再加个<code>*</code>代表的就是<code>Cat</code>类型的指针类型。</p><p>这时，<code>Cat</code>可以被叫做<code>*Cat</code>的基本类型。你可以认为这种指针类型的值表示的是指向某个基本类型值的指针。</p><p>我们可以通过把取值操作符<code>*</code>放在这样一个指针值的左边来组成一个取值表达式，以获取该指针值指向的基本类型值，也可以通过把取址操作符<code>&amp;</code>放在一个可寻址的基本类型值的左边来组成一个取址表达式，以获取该基本类型值的指针值。</p><p>所谓的指针方法，就是接收者类型是上述指针类型的方法。</p><p>那么值方法和指针方法之间有什么不同点呢？它们的不同如下所示。</p><ol>
+<li>
+<p>值方法的接收者是该方法所属的那个类型值的一个副本。我们在该方法内对该副本的修改一般都不会体现在原值上，除非这个类型本身是某个引用类型（比如切片或字典）的别名类型。<br>
+<br> 而指针方法的接收者，是该方法所属的那个基本类型值的指针值的一个副本。我们在这样的方法内对该副本指向的值进行修改，却一定会体现在原值上。<br></p>
+</li>
+<li>
+<p>一个自定义数据类型的方法集合中仅会包含它的所有值方法，而该类型的指针类型的方法集合却囊括了前者的所有方法，包括所有值方法和所有指针方法。<br><br>
+严格来讲，我们在这样的基本类型的值上只能调用到它的值方法。但是，Go语言会适时地为我们进行自动地转译，使得我们在这样的值上也能调用到它的指针方法。<br><br>
+比如，在<code>Cat</code>类型的变量<code>cat</code>之上，之所以我们可以通过<code>cat.SetName("monster")</code>修改猫的名字，是因为Go语言把它自动转译为了<code>(&amp;cat).SetName("monster")</code>，即：先取<code>cat</code>的指针值，然后在该指针值上调用<code>SetName</code>方法。</p>
+</li>
+<li>
+<p>在后边你会了解到，一个类型的方法集合中有哪些方法与它能实现哪些接口类型是息息相关的。如果一个基本类型和它的指针类型的方法集合是不同的，那么它们具体实现的接口类型的数量就也会有差异，除非这两个数量都是零。<br><br>
+比如，一个指针类型实现了某某接口类型，但它的基本类型却不一定能够作为该接口的实现类型。</p>
+</li>
+</ol><p>能够体现值方法和指针方法之间差异的小例子我放在demo30.go文件里了，你可以参照一下。</p><p><strong>总结</strong></p><p>结构体类型的嵌入字段比较容易让Go语言新手们迷惑，所以我在本篇文章着重解释了它的编写方法、基本的特性和规则以及更深层次的含义。在理解了结构体类型及其方法的组成方式和构造套路之后，这些知识应该是你重点掌握的。</p><p>嵌入字段是其声明中只有类型而没有名称的字段，它可以以一种很自然的方式为被嵌入的类型带来新的属性和能力。在一般情况下，我们用简单的选择表达式就可以直接引用到它们的字段和方法。</p><p>不过，我们需要小心可能产生“屏蔽”现象的地方，尤其是当存在多个嵌入字段或者多层嵌入的时候。“屏蔽”现象可能会让你的实际引用与你的预期不符。</p><p>另外，你一定要梳理清楚值方法和指针方法的不同之处，包括这两种方法各自能做什么、不能做什么以及会影响到其所属类型的哪些方面。这涉及值的修改、方法集合和接口实现。</p><p>最后，再次强调，嵌入字段是实现类型间组合的一种方式，这与继承没有半点儿关系。Go语言虽然支持面向对象编程，但是根本就没有“继承”这个概念。</p><p><strong>思考题</strong></p><ol>
+<li>我们可以在结构体类型中嵌入某个类型的指针类型吗？如果可以，有哪些注意事项？</li>
+<li>字面量<code>struct{}</code>代表了什么？又有什么用处？</li>
+</ol><p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p><p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/9f/1d/ec173090.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">melon</span>
+                            </div>
+                            <div class="bd">方法的定义感觉本质上也是一种语法糖形式，其本质就是一个函数，声明中的方法接收者就是函数的第一个入参，在调用时go会把施调变量作为函数的第一个入参的实参传入，比如<br>func (t MyType) MyMethod(in int) (out int) <br>可以看作是<br>func MyMethod(t Mytype, in int) (out int) <br><br>比如 myType.MyMethod(123) 就可以理解成是调用MyMethod(myType, 123)，如果myType是*MyType指针类型，则在调用是会自动进行指针解引用，实际就是这么调用的 MyMethod(*myType, 123)，这么一理解，值方法和指针方法的区别也就显而易见了。 <br></div>
+                            <span class="time">2018-09-10 15:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/df/ff/7f17e76f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ossic</span>
+                            </div>
+                            <div class="bd">貌似github上的代码并没有更新 <br></div>
+                            <span class="time">2018-09-10 14:53</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/52/81/745475e9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">colben</span>
+                            </div>
+                            <div class="bd">嘿嘿，看了郝老师的《go并发编程》，里面讲到空结构体类型变量不占内存空间，内存地址相同，建议用于在通道里传递“信号”…… <br></div>
+                            <span class="time">2018-09-11 17:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/53/e3/39dcfb11.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">来碗绿豆汤</span>
+                            </div>
+                            <div class="bd">思考题1， 我们可以在结构体中嵌入某个类型的指针类型， 它和普通指针类似，默认初始化为nil,因此在用之前需要人为初始化，否则可能引起错误<br>思考题2， 空结构体不占用内存空间，但是具有结构体的一切属性，如可以拥有方法，可以写入channel。所以当我们需要使用结构体而又不需要具体属性时可以使用它。 <br></div>
+                            <span class="time">2018-09-11 14:52</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d2/3e/f1258475.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">苏浅</span>
+                            </div>
+                            <div class="bd">每篇文章都有一个配图，这是有啥讲究吗？还是就是觉得好看？😏 <br></div>
+                            <span class="time">2018-09-10 18:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/24/df/da37ff2b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Yayu</span>
+                            </div>
+                            <div class="bd">第二次学习本章节，对老师讲解的内容有了清晰的认识。回答一下老师的问题。1.一个结构体可以嵌入一个类型的指针类型，而且被嵌入的类型还可以是它自己，这样可以构造出树的数据结构。2.struct｛｝是一个空结构体字面量表示，它可以用来给一个变量赋值，这个变量虽然没有字段，但是可以绑定方法。 <br></div>
+                            <span class="time">2018-09-18 00:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/47/9a/12141630.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Q卓玛的男人</span>
+                            </div>
+                            <div class="bd">感觉值方法修改的只是类型值的副本，这个很容易弄错误认为已经更新了类型值本身。那么如果我们定义方法都定义为指针方法，而不用值方法，会有什么问题吗？ <br></div>
+                            <span class="time">2018-09-11 10:11</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/73/30/fd602742.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">大马猴</span>
+                            </div>
+                            <div class="bd">return a.AnimalCategory.String()，这叫链式表达式吗？这不就是普通的调用吗？老乱用概念，让人很难理解 <br></div>
+                            <span class="time">2018-12-17 10:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/76/54/0aeb5e34.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">红科</span>
+                            </div>
+                            <div class="bd">思考题能给出答案吗，有时候看留言也不知道哪个是正确的，自己也不会。自己谷歌查询，也是一知半解的，有时候还是不太明白。 <br></div>
+                            <span class="time">2018-10-25 22:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">别着急，思考题答案我会在后边补发。不过可能要耗费一些时间。</p>
+                                <p class="reply-time">2018-11-06 13:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/6a/04/63fd4c7b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ken</span>
+                            </div>
+                            <div class="bd">嵌入多个类型时，如果都有某个同名方法或字段，屏蔽的顺序是怎么样的？<br>如果一个嵌入字段对结构体打印时会调用嵌入字段的string方法，但如果有多个嵌入字段时，都有String方法时，是如何调用的呢？ <br></div>
+                            <span class="time">2018-10-02 18:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/75/6f/8a6e0a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">任性😀</span>
+                            </div>
+                            <div class="bd">1、可以引入，实例化的时候需要传指针值<br>2、不知道<br>3、建议老师在下一遍文章里可以说说上一篇留的问题（有些看不懂啊） <br></div>
+                            <span class="time">2018-09-29 11:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4e/e0/166d4548.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">卡卡爱漂流</span>
+                            </div>
+                            <div class="bd">如果一个method的receiver是*T,你可以在一个T类型的实例变量V上面调用这个method，而不需要&amp;V去调用这个method；<br>如果一个method的receiver是T，你可以在一个*T类型的变量P上面调用这个method，而不需要 *P去调用这个method。<br><br>所以，不用担心你是调用的指针的method还是不是指针的method，Go知道你要做的一切 <br></div>
+                            <span class="time">2018-09-28 17:48</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/13/00/a4a2065f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Michael</span>
+                            </div>
+                            <div class="bd">嵌入指针类型我觉得要注意的是：指针的默认值是 nil, 在对这个字段赋值之前，没法使用这个字段，调用的时候就会出错。<br><br>而值类型初始化的时候是有默认值得，不会有这样的风险。 <br></div>
+                            <span class="time">2018-09-16 23:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTK1iadgQFxhYdu7wIUf7n5XYZlchNicdGBsafY9GPX3hNq0313DfE7ia6CeRm7VZAmwGPsLI8icTJUqXg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">jians</span>
+                            </div>
+                            <div class="bd">测试嵌套多个结构体存在同名方法的情况，同一级别的嵌套体内不能存在相同的方法，否则在顶层调用方法时报错，看来它没办法决定使用哪一个嵌套的方法，除非通过.点定位调用。<br>如果嵌套体在不同深度，会默认调用接近浅层的。 <br></div>
+                            <span class="time">2018-09-11 16:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/52/81/745475e9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">colben</span>
+                            </div>
+                            <div class="bd">go语言的结构体甚得我心！2009年我上大二学c++开始接触对象的概念，当时发现类的私有变量、成员函数完全可以用c的结构体配合函数指针来实现，完全没有必要去搞“类”！可惜后来的Java和python都没有摆脱class这个关键字，这次的go终于甩掉了臃肿的“对象”！ <br></div>
+                            <span class="time">2018-09-10 23:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/c8/ae/f2b0bc01.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">世风十三</span>
+                            </div>
+                            <div class="bd">嵌入多个类型时，如果都有某个同名方法或字段，屏蔽的顺序是怎么样的？优先级？ <br></div>
+                            <span class="time">2018-09-10 12:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/c7/e6/11f21cb4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">川杰</span>
+                            </div>
+                            <div class="bd">您好，我是一名c#语言使用者，四年工作经验。看了您的文章有个问题，您也知道oop的思想开发下，会出现对象嵌套过多的情况，在代码阅读上会产生障碍，那么对于go语言的设计哲学来讲，它是不是不鼓励这样过多的对象嵌套？ <br></div>
+                            <span class="time">2018-11-11 17:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/83/e9/3016ed84.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Richard Zhong</span>
+                            </div>
+                            <div class="bd">请问郝老师，值类型的副本拷贝是深拷贝吗？ <br></div>
+                            <span class="time">2018-11-08 10:56</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/13/00/a4a2065f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Michael</span>
+                            </div>
+                            <div class="bd">郝大，有一句话理解不是很清除，还请赐教：一个自定义数据类型的方法集合中仅会包含它的所有值方法，而该类型的指针类型的方法集合却囊括了前者的所有方法，包括所有值方法和所有指针方法。<br><br>不是说，经过go语言自动进行转义，类型值 可以调用 类型指针值 方法，类型指针值 也可以调用 类型值方法吗，我咋觉得，类型值 和 类型指针值 拥有的方法数量应该是同样多的呢？<br><br>是不是因为 类型指针值 在 调用 类型值 方法的时候，会先解引用并且复制出一个新的值再去调用？ <br></div>
+                            <span class="time">2018-11-07 00:18</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/09/25/2db95c79.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">杨赛军</span>
+                            </div>
+                            <div class="bd">感觉对于本例子而言 不管是值方法还是指针方法，cat的name都会被修改成功啊。我 <br></div>
+                            <span class="time">2018-10-25 08:22</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">贴源码，或者到群里使用，你可能打印的值不对。</p>
+                                <p class="reply-time">2018-11-06 13:30</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

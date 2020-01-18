@@ -1,0 +1,376 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                预习篇讲写给0基础入门的Go语言学习者
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/07/cb/076877d5cd7aa8366854f02c57f18dcb.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是郝林，今天我分享的内容是：0基础的你，如何开始入门学习Go语言。</p>
+<h2>1. 你需要遵循怎样的学习路径来学习Go语言？</h2>
+<p>我们发现，订阅本专栏的同学们都在非常积极的学习和讨论，这让我们非常欣慰，并且和你一样干劲十足。不过，我在留言中发现，大家的基础好像都不太一样，大致可以分为这么几类。</p>
+<ul>
+<li>零基础的同学：可能正准备入行或者刚刚对编程感兴趣，可以熟练操作电脑，但是对计算机、操作系统以及网络方面的知识不太了解。</li>
+<li>无编程经验或者编程经验较少的同学：可能正在从事其他的技术相关工作，也许可以熟练编写脚本，但是对程序设计的通用知识和技巧还不太了解。</li>
+<li>有其他语言编程经验的同学：可能已成为程序员或软件工程师，可以用其他的编程语言熟练编写程序，但是对Go语言还不太了解。</li>
+<li>有一定Go语言编程经验的同学：已有Go语言编程基础，写过一些Go语言程序，但是急需进阶却看不清途径。</li>
+</ul>
+<p>基于以上分类，我为大家制定了一份Go语言学习路径。不论你属于上面的哪一类，都可以按照此路径去学习深造。具体请看下面的思维导图。</p>
+<p><img src="https://static001.geekbang.org/resource/image/c7/b7/c702df29da67be3c4083ecce1d0eadb7.png" alt="" /></p>
+<p>（长按保存大图）</p>
+<h2>2. 学习本专栏前，你需要有哪些基础知识储备？</h2>
+<p>在这个专栏里，我会假设你有一定的计算机基础，比如，知道操作系统是什么、环境变量怎么设置、命令行怎样使用，等等。</p><!-- [[[read_end]]] -->
+<p>另外，我还会假定你具备一点点编程知识，比如，知道程序是什么、程序通常会以怎样的形式存在，以及程序与操作系统和计算机有哪些关系，等等。</p>
+<p>对了，还有在这个早已成熟的移动互联网时代，想学编程的你，一定也应该知道那些最最基本的网络知识。</p>
+<p>我在本专栏里只会讨论Go语言的代码和程序，而不会提及太多计算机体系结构或软件工程方面的事情。所以你即使没有专门学过计算机系统或者软件工程也没有关系，我会尽量连带讲一些必要的基础概念和知识。</p>
+<p>从2018年开始，随着Google逐渐重回中国，Go语言的官方网站在Google中国的域名下也有了镜像，毕竟中国是Go语言爱好者最多的国家，同时也是Go语言使用最广泛的一片土地。如果你在国内，可以敲入<a href="https://golang.google.cn">这个网址</a>来访问Go语言的官网。</p>
+<p>这个专栏专注于Go语言的核心知识，因此我并不会深入说明所有关于语法和命令的细枝末节。如果你想去全面了解Go语言的所有语法，那么可以去Go语言官网的<a href="https://golang.google.cn/ref/spec">语言规范页面</a>仔细查阅。</p>
+<p>当然了，这里的语言规范是全英文的，如果你想看汉化的内容也是有选择的，我记得先后有几拨国内的Go语言爱好者自发组织翻译过。不过我都没有仔细看过，不知道质量如何，所以在这里就不特别推荐了。</p>
+<p>对于从事计算机和软件开发相关工作的同学，我强烈建议你们要有意地训练快速阅读英文文档的能力，不论是否借助字典和翻译工具。</p>
+<p>不过，如果你想专门学习一下Go命令方面的知识和技巧，那么我推荐你看看我之前写的免费开源教程《<a href="https://github.com/hyper0x/go_command_tutorial">Go命令教程</a>》。这份教程的内容虽然稍显陈旧，但是帮助你学会使用Go语言自带的常用命令和工具肯定是没问题的。</p>
+<p>好了，其实即使你是个编程小白也不用过于担心，我们会一起帮助你的。至于我刚刚说的Go语言规范和Go命令教程，你也可以在学习本专栏的过程中根据实际需要去有针对性的阅读。</p>
+<h2>3.这里有一份基础知识列表，请查收</h2>
+<p>如果你阅读本专栏的第一个模块时感觉有些吃力，那可能是你还没有熟悉Go语言的一些基础概念和知识。我为你精心制作了一张Go语言基础知识的导图，里面几乎包含了入门Go语言所需的所有知识点。</p>
+<p><img src="https://static001.geekbang.org/resource/image/ad/85/add8566dc5431378bda313a32a6ebb85.jpg" alt="" /><br />
+（长按保存大图）</p>
+<p>有了这些，你是否已经感觉学习本专栏会更加轻松了呢？</p>
+<p>总之，教程、资料和助推就交给我和极客时间的编辑、运营们来共同负责。而你需要做的，就是保存好这一份对Go语言学习的决心，你可以自己去尝试整理一份Go语言的学习笔记，遇见不懂的地方，你也可以在文章下面留言，我们一起讨论。</p>
+<p>好了，感谢你的收听，我们下期再见。</p>
+<p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p>
+<p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/fb/44/8b2600fd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">咖啡色的羊驼</span>
+                            </div>
+                            <div class="bd">郝老师的学习路线图很棒，进阶之路有方向了。之前《The Go Programming Language》来学习go的，看了好几遍，《go并发编程》第二版今天昨天才开始看，确实查缺补漏了一些基础的点。 <br></div>
+                            <span class="time">2018-08-20 00:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/44/47/3ddb94d0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿杜</span>
+                            </div>
+                            <div class="bd">c++&#47;c,python,java都学过，目前主力是java，也写一点c++。我学go语言的初衷是前公司使用了很多go开发的中间件（etcd、nsq等等），我希望能了解go语言在并发编程方面的特性，最好在必要的时候可以看懂这些中间件的源码<br> <br></div>
+                            <span class="time">2018-08-20 10:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你要是想深入了解Go并发编程可以买我写的那本《Go并发编程实战》第二版。</p>
+                                <p class="reply-time">2018-08-20 14:33</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/dc/6f/8ba3a65d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">胡思</span>
+                            </div>
+                            <div class="bd">很全面了，谢谢郝老师，我会努力的ヽ(•̀ω•́ )ゝ <br></div>
+                            <span class="time">2018-08-20 20:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4b/22/09540b7c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">天之草</span>
+                            </div>
+                            <div class="bd">erlang转go，感觉差别不算大，channel和erlang的消息队列mailbox类似，区别比较大的是erlang每个虚拟进程都是独立的内存。而go的是共享内存，要操作和同步这些内存，最好用协程串行化，保证并发安全 <br></div>
+                            <span class="time">2018-08-20 23:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/64/05/6989dce6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">我来也</span>
+                            </div>
+                            <div class="bd">在看这篇文章前，已经订阅了慕课网上的《go语言第一课》，也在看《go并发编程实战》第二版。<br>题外话，与慕课网上的郝林头像相比，还是这里的帅，虽然那里也是真实的。 <br></div>
+                            <span class="time">2018-08-20 10:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">谢谢啊！不是同一个时期的，这里的头像更贴近现在。</p>
+                                <p class="reply-time">2018-08-20 14:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b8/44/d919d889.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">lik0914</span>
+                            </div>
+                            <div class="bd">go错误机制，一直搞不太明白，工程实践的好方式呢 <br></div>
+                            <span class="time">2018-08-20 08:49</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">在后面讲错误处理的时候我会深入解析。</p>
+                                <p class="reply-time">2018-08-20 14:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/00/53/b8ee8918.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">灬 黑 礼服 ~</span>
+                            </div>
+                            <div class="bd">运维出身的学习下，就会shell。 希望有更多的收获！！！ <br></div>
+                            <span class="time">2018-11-29 11:30</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/fa/6b/6afdd2b9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">大毛哥</span>
+                            </div>
+                            <div class="bd">仔细看了第二张图，到这里选这门课已经值了，非常棒 <br></div>
+                            <span class="time">2018-08-28 00:06</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/86/72/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">梧桐</span>
+                            </div>
+                            <div class="bd">看完了《Go语言编程》，到新部门正好是用go语言开发，框架初步定了使用国内的beego框架，正需要进阶go，看到这个专栏毫不犹豫的买了，对goroutine并发不是很懂，下一步准备看《Go并发编程实战》 <br></div>
+                            <span class="time">2018-08-27 09:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/3b/36/2d61e080.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">行者</span>
+                            </div>
+                            <div class="bd">两张图收下了，真的很棒。第一张对即便是工作4年的我也有帮助，温故而知新。 <br></div>
+                            <span class="time">2018-08-26 08:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">随缘03230323</span>
+                            </div>
+                            <div class="bd">会java，学go语言快吗？ <br></div>
+                            <span class="time">2018-08-22 20:13</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">会很快，因为Go更简单。</p>
+                                <p class="reply-time">2018-08-23 22:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ac/a1/43d83698.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">云学</span>
+                            </div>
+                            <div class="bd">有没有关于〃go语言的缺陷和陷阱〃的好资料 <br></div>
+                            <span class="time">2018-08-22 09:12</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个专栏的一部分内容说的就是这个。</p>
+                                <p class="reply-time">2018-08-22 11:45</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/40/69/f86a1526.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">慢熊胖胖跑</span>
+                            </div>
+                            <div class="bd">归纳的很全面，万丈高楼平地起。谢谢老师 <br></div>
+                            <span class="time">2018-08-20 09:24</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4f/7d/dd852b04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">chon</span>
+                            </div>
+                            <div class="bd">老师，有啥好用的go的开发工具ide推荐？谢谢 <br></div>
+                            <span class="time">2018-12-17 10:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/91/b1/b56e800e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">w</span>
+                            </div>
+                            <div class="bd">老师，go语言在接收db过来的null的时候会报错。请问针对这一点也没有什么推荐的比简洁舒服的实践方法呢？ <br></div>
+                            <span class="time">2018-12-06 21:35</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/17/07/83f030c9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kakasir</span>
+                            </div>
+                            <div class="bd">我买的比较晚，只能一步步跟上大家的进度，幸好有c++经验，希望能有新的编程思维 <br></div>
+                            <span class="time">2018-11-27 09:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/64/86/6b593cb9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Zach_</span>
+                            </div>
+                            <div class="bd">Go语言入门打卡，刚进专栏没几天，希望留言能得到老师的关注～  <br><br>顺便问一下，应该在windows 上开发，还是在linux 上开发GO 程序啊？ <br></div>
+                            <span class="time">2018-11-26 08:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/13/3f/817f380e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">June Yuan</span>
+                            </div>
+                            <div class="bd">老师，The Go Programming Language 不值得推荐吗？我换工作时，新公司要用 go, 为作准备买的就是这本书～ <br></div>
+                            <span class="time">2018-10-31 13:42</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">也可以啊。只要适合你就好。</p>
+                                <p class="reply-time">2018-11-06 13:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/7f/33/156242f9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小佬頭</span>
+                            </div>
+                            <div class="bd">很好的一个课程，希望自己可以坚持下来。 <br></div>
+                            <span class="time">2018-09-19 20:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/d1/ea/1abecc55.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">白小亮</span>
+                            </div>
+                            <div class="bd">老师你好<br>       我自己是用c++做数据解析的，想往网络后台的方向发展，自己学了go语言，但是平时工作接触不到后台的东西，希望老师给点建议，谢谢了🙏 <br></div>
+                            <span class="time">2018-09-17 13:21</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

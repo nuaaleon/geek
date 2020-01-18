@@ -1,0 +1,326 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                尾声讲愿你披荆斩棘，所向无敌
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/b1/dd/b1f576ae6e5411e3e6efa12bcdb360dd.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是郝林。</p><p>专栏到这里，就要结束了。</p><p>差不多在半年以前（2018年的第二个季度），极客时间的总编辑郭蕾找到我，说想让我写一个关于Go语言的技术专栏。</p><p>我那时候还在轻松筹担任大数据负责人，管理着四个技术团队，每天都非常非常忙碌，看起来并没有多余的精力去写这么一个在时间和质量上都有着严格要求的专栏。</p><p>我们俩也是老相识了，所以，我当时斩钉截铁地说：“写不了，没时间”。当然了，要是连续熬夜的话或许可以写得出来，我写《Go并发编程实战》那本书的时候就是这么干的。</p><p>可是，我在2017年年末已经因为急性胰腺炎惊心动魄过一回了，需要非常注意休息，所以我想了想还是决定小心为妙。</p><p>也许是凑巧，也许是注定，在2018年的6月份，我的胰腺炎复发了。我当时还在面试，意念上已经疼得直不起腰了，但还是坚持着完成了面试。</p><p>后来在医院等待确诊结果的时候，我的第三个念头竟然就是“也许我可以有时间去写那个专栏了”。现在回忆起来，当初的想法还是太简单了。</p><p>不过，专栏这件事情终归还是向着合作的方向发展了。因为郭蕾的坚持和帮助，也因为极客时间的慷慨解囊和多次扶持，在经过了不少的艰难困苦之后，这个专栏如今终于写作完成了。我对此感到非常的高兴和欣慰。</p><!-- [[[read_end]]] --><h2>专栏是如何进行写作的</h2><p>我在写这个专栏的时候，已经尽我所能地让其中的每一句话都准确无误，并且尽量地加入我最新的研究成果和个人理解。</p><p>所以，即使是对于我自己，这个专栏的价值和意义也是很大的。我通过这个专栏的写作又倒逼我自己仔细地阅读了一遍Go语言最新版本的源码。</p><p>我当初给自己定下了一个关于文章质量的目标。我要保证的是，专栏中的每一篇文章的质量都绝对不能低于这个目标。</p><p><strong>没错，这里只有目标，没有底线。对于我个人而言，只要是边界明确的事情，我就不喜欢设置底线。因为只要有了底线，作为更高要求的目标往往就很难达成了。这样的双重标准会让目标形同虚设。</strong></p><p>为了达成目标，我在写每一篇文章的时候都差不多要查阅不少的Go语言源码，确定每一个细节。每一个版本的Go语言，其内部的源码都会有一些变化，所以以前的经验只能作为参考，并不能完全依赖。</p><p>我需要先深入理解（或者修正理解）、再有侧重点地记录和思考，最后再进行贯穿式的解读。在做完这些之后，我才会把精华写入文章之中。</p><p>我觉得，人的成就不论大小都需要经过努力和苦难才能达成。和我共事过的很多人都知道，我是一个不会轻易给出承诺的人。不过，一旦做出承诺，我就会去拼命完成。</p><p>大多数时候，我并不觉得在拼命，但是别人（尤其是我的家人）却告诉我“这就是在拼命”。现在想想，这种完全靠爆发力取胜的做事方式是不对的，做工作还是应该顺滑一些，毕竟“润物”需得“细无声”。</p><h2>专栏仍有瑕疵</h2><p>虽然这个专栏的文章已经全部完成了，但是由于我的精力问题，专栏在呈现形式上还有一些瑕疵。</p><p>比如，没有配图，没有给出思考题的答案等。我在极客时间App的留言区里已经多次跟大家解释过这件事了。</p><p><strong>但是为了保证大家都能够知晓，我在这里再说一遍：我会再利用几个月的时间为这个专栏补充配图，并简要地给出所有思考题的答案。</strong></p><p>我已经开始绘制一些图片了，绘制完成就会同步更新到文章中，你也可以返回去重新阅读一遍。</p><p><img src="https://static001.geekbang.org/resource/image/2f/3c/2fdfb5620e072d864907870e61ae5f3c.png" alt=""></p><p>（目前正在绘制的图样）</p><p>我补充的顺序是，配图在先，思考题答案再后。因为我的精力实在有限，我会争取在明年春节之前完成补充。还希望大家能够理解。</p><h2>前方的路</h2><p>每个人的路都是不同的，即便他们在做着一模一样的事。前方的路只有你自己能够开创，但是我希望本专栏能够作为你的一盏指路明灯。我个人认为，至少对于大部分读者而言，我的这个愿望已经达成了。你觉得呢？是否已经有了足够的收获呢？</p><p>无论如何，只要你还想继续走在Go语言编程的康庄大道上，积极地加入到有活力、有情怀的技术社区当中准没错。我想，极客时间就将是这样一个社区。当然，我们的“GoHackers”社群也是。</p><p>在最后的最后，我想去表达一些感谢，我要由衷地感谢我的家人！如果不是他们，别说写专栏了，我坐在电脑前面打字写文章可能都是奢望，我还要感谢所有帮助过我的人。还有在阅读这篇文章的你们，也是我最大写作动力。</p><p>好了，我就先说到这里吧。后面有的是机会。最后，祝你学习顺利，在成为技术大神的道路上披荆斩棘，所向无敌！</p><p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p><p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/aa/53/768aec0a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">郝林</span>
+                            </div>
+                            <div class="bd">看了大家的留言和祝福，谢谢了！一起加油！ <br></div>
+                            <span class="time">2018-12-09 17:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/b7/f9/75bae002.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">manky</span>
+                            </div>
+                            <div class="bd">感谢老师，祝老师身体健康。 <br></div>
+                            <span class="time">2018-12-07 10:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/35/95/9b7fbfe1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wang</span>
+                            </div>
+                            <div class="bd">祝郝大早日康复，开专栏的作者的描述都是惊人的相似，没时间，没精力，但是最后都出来了，深感自己的不足，但愿能跟着郝大的脚步一起前行 <br></div>
+                            <span class="time">2018-12-07 12:57</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">一起加油吧</p>
+                                <p class="reply-time">2018-12-07 20:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/44/84/25a17f05.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">苏安</span>
+                            </div>
+                            <div class="bd">老师辛苦了，注意身体啊 <br></div>
+                            <span class="time">2018-12-11 17:53</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/e1/0e/cb5de91d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">monkeytao</span>
+                            </div>
+                            <div class="bd">感谢老师，身体和技术共同进步，加油！ <br></div>
+                            <span class="time">2018-12-09 22:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/64/05/6989dce6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">我来也</span>
+                            </div>
+                            <div class="bd">祝老师早日康复！<br>我是今年才下定决心开始学go。有一次在Twitter上看见池大在推荐这个专栏，我就毫不犹豫的买了。（当时完全不了解池大和老师你的传奇经历）这是我在极客时间购买的第一个专栏。现在跟着学的专栏也有十几个。<br>刚开始学这个专栏时，就顺便在 慕课网 上找了老师的一个免费课程，跟着学了基本的语法。<br>今年自己用go重构了公司里的一个程序，放在了生产环境中，我自己还是蛮满意的。<br>谢谢老师领进门，专栏里后面系统库的知识我理解起来有困难，还需要回头多看看。<br>再次感谢老师！ <br></div>
+                            <span class="time">2018-12-08 16:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">也谢谢你，加油！</p>
+                                <p class="reply-time">2018-12-09 17:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/cb/61/b62d8a3b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张立华</span>
+                            </div>
+                            <div class="bd">祝郝老师早日康复 <br></div>
+                            <span class="time">2018-12-08 13:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b5/61/9802a552.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">柠檬不必羡慕西瓜dě甜</span>
+                            </div>
+                            <div class="bd">非常感谢老师您的用心与付出，您用您的付出为我们打开了学习go的篇章，您的讲解很有价值，补充了我之前不理解的短板，再次衷心感谢您的付出，我觉得不仅是买了您的课，更多的是从您那里学到了一些学习的精神，做事情的态度，虽然我提问较少，是因为结合您的讲解与读官网博客、读文档，解决掉了，同时也在不断的完善自己对go更深层次的理解，下一步需要在实践中应用所学。刚看到了您阅读源码，我觉得这是我该学习的方法，从我接触go，到现在不断的学习，已经深深地喜欢上了它，谢谢您的引路，再次祝您早日康复，身体健康！ <br></div>
+                            <span class="time">2018-12-07 20:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/44/71/28a1adb9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">任忠良</span>
+                            </div>
+                            <div class="bd">保重身体 <br></div>
+                            <span class="time">2018-12-07 18:15</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">谢谢，会的</p>
+                                <p class="reply-time">2018-12-07 20:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/59/f6/ed66d1c1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">chengzise</span>
+                            </div>
+                            <div class="bd">感谢老师，收获很多。祝老师身体健康。 <br></div>
+                            <span class="time">2018-12-07 12:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/71/e5/bcdc382a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">My dream</span>
+                            </div>
+                            <div class="bd">祝老师身体健康！请老师加一篇怎么搭建nginx+go的服务器环境嘛，现在都流行nginx解析静态文件，go解析动态文件！你光教我们go，但不教我们怎么搭建这种最佳环境 <br></div>
+                            <span class="time">2018-12-07 10:53</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/19/3d/997f92e8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">0x01</span>
+                            </div>
+                            <div class="bd">最后一次凌晨等更新了，哈哈，以后靠自己钻研了 <br></div>
+                            <span class="time">2018-12-07 00:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/48/de/e165bab6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">^(oo)^桀</span>
+                            </div>
+                            <div class="bd">祝老师身体健康！我想知道老师的图是用什么工具画的。 <br></div>
+                            <span class="time">2018-12-20 20:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/6b/23/73f18275.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陌上人 .</span>
+                            </div>
+                            <div class="bd">今天才算是追完,还剩最后几个章节,感觉看的有些吃力,所以准备二刷,另外老师配套的代码目录跟章节目录不太对的上,建议如果老师有时间把代码目录再修正一下,课程非常的值,学到了很多.谢谢老师 <br></div>
+                            <span class="time">2018-12-20 17:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/01/be/be358cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Kennedy</span>
+                            </div>
+                            <div class="bd">感谢老师的付出，在这个专栏里我收获满满，祝愿老师早日康复！ <br></div>
+                            <span class="time">2018-12-20 09:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/49/03/7df6c175.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">daydayyiday</span>
+                            </div>
+                            <div class="bd">已经买郝大的书看起来了，祝早日康复 <br></div>
+                            <span class="time">2018-12-18 14:45</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/7f/77/e6820fe0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kalid</span>
+                            </div>
+                            <div class="bd">祝老师身体健康，工作顺利！ <br></div>
+                            <span class="time">2018-12-18 13:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/9d/5e/02e4e89e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">天天天蓝</span>
+                            </div>
+                            <div class="bd">早日康复，写更多的文章 <br></div>
+                            <span class="time">2018-12-17 16:59</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/50/99/d69363ab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李皮皮皮皮皮</span>
+                            </div>
+                            <div class="bd">专栏收获颇多，老师的专研精神让我敬佩。<br>祝身体健康 <br></div>
+                            <span class="time">2018-12-17 09:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4d/5d/855a4d2a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">雨三点</span>
+                            </div>
+                            <div class="bd">祝一切安好 <br></div>
+                            <span class="time">2018-12-17 03:15</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

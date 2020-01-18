@@ -1,0 +1,402 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                10讲通道的基本操作
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/17/8f/1778908bbc06c2155bb0a42f85ad468f.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>作为Go语言最有特色的数据类型，通道（channel）完全可以与goroutine（也可称为go程）并驾齐驱，共同代表Go语言独有的并发编程模式和编程哲学。</p><blockquote>
+<p><span class="reference">Don’t communicate by sharing memory; share memory by communicating. （不要通过共享内存来通信，而应该通过通信来共享内存。）</span></p>
+</blockquote><p>这是作为Go语言的主要创造者之一的Rob Pike的至理名言，这也充分体现了Go语言最重要的编程理念。而通道类型恰恰是后半句话的完美实现，我们可以利用通道在多个goroutine之间传递数据。</p><h2>前导内容：通道的基础知识</h2><p>通道类型的值本身就是并发安全的，这也是Go语言自带的、唯一一个可以满足并发安全性的类型。它使用起来十分简单，并不会徒增我们的心智负担。</p><p>在声明并初始化一个通道的时候，我们需要用到Go语言的内建函数<code>make</code>。就像用<code>make</code>初始化切片那样，我们传给这个函数的第一个参数应该是代表了通道的具体类型的类型字面量。</p><p>在声明一个通道类型变量的时候，我们首先要确定该通道类型的元素类型，这决定了我们可以通过这个通道传递什么类型的数据。</p><p>比如，类型字面量<code>chan int</code>，其中的<code>chan</code>是表示通道类型的关键字，而<code>int</code>则说明了该通道类型的元素类型。又比如，<code>chan string</code>代表了一个元素类型为<code>string</code>的通道类型。</p><!-- [[[read_end]]] --><p>在初始化通道的时候，<code>make</code>函数除了必须接收这样的类型字面量作为参数，还可以接收一个<code>int</code>类型的参数。</p><p>后者是可选的，用于表示该通道的容量。所谓通道的容量，就是指通道最多可以缓存多少个元素值。由此，虽然这个参数是<code>int</code>类型的，但是它是不能小于<code>0</code>的。</p><p>当容量为<code>0</code>时，我们可以称通道为非缓冲通道，也就是不带缓冲的通道。而当容量大于<code>0</code>时，我们可以称为缓冲通道，也就是带有缓冲的通道。非缓冲通道和缓冲通道有着不同的数据传递方式，这个我在后面会讲到。</p><p><strong>一个通道相当于一个先进先出（FIFO）的队列。也就是说，通道中的各个元素值都是严格地按照发送的顺序排列的，先被发送通道的元素值一定会先被接收。元素值的发送和接收都需要用到操作符<code>&lt;-</code>。我们也可以叫它接送操作符。一个左尖括号紧接着一个减号形象地代表了元素值的传输方向。</strong></p><pre><code>package main
+
+import &quot;fmt&quot;
+
+func main() {
+	ch1 := make(chan int, 3)
+	ch1 &lt;- 2
+	ch1 &lt;- 1
+	ch1 &lt;- 3
+	elem1 := &lt;-ch1
+	fmt.Printf(&quot;The first element received from channel ch1: %v\n&quot;,
+		elem1)
+}
+</code></pre><p>在demo20.go文件中，我声明并初始化了一个元素类型为<code>int</code>、容量为<code>3</code>的通道<code>ch1</code>，并用三条语句，向该通道先后发送了三个元素值<code>2</code>、<code>1</code>和<code>3</code>。</p><p>这里的语句需要这样写：依次敲入通道变量的名称（比如<code>ch1</code>）、接送操作符<code>&lt;-</code>以及想要发送的元素值（比如<code>2</code>），并且这三者之间最好用空格进行分割。</p><p>这显然表达了“这个元素值将被发送该通道”这个语义。由于该通道的容量为3，所以，我可以在通道不包含任何元素值的时候，连续地向该通道发送三个值，此时这三个值都会被缓存在通道之中。</p><p>当我们需要从通道接收元素值的时候，同样要用接送操作符<code>&lt;-</code>，只不过，这时需要把它写在变量名的左边，用于表达“要从该通道接收一个元素值”的语义。</p><p>比如：<code>&lt;-ch1</code>，这也可以被叫做接收表达式。在一般情况下，接收表达式的结果将会是通道中的一个元素值。</p><p>如果我们需要把如此得来的元素值存起来，那么在接收表达式的左边就需要依次添加赋值符号（<code>=</code>或<code>:=</code>）和用于存值的变量的名字。因此，语句<code>elem1 := &lt;-ch1</code>会将最先进入<code>ch1</code>的元素<code>2</code>接收来并存入变量<code>elem1</code>。</p><p>现在我们来看一道与此有关的题目。<strong>今天的问题是：对通道的发送和接收操作都有哪些基本的特性？</strong></p><p>这个问题的背后隐藏着很多的知识点，<strong>我们来看一下典型回答</strong>。</p><p>它们的基本特性如下。</p><ol>
+<li>对于同一个通道，发送操作之间是互斥的，接收操作之间也是互斥的。</li>
+<li>发送操作和接收操作中对元素值的处理都是不可分割的。</li>
+<li>发送操作在完全完成之前会被阻塞。接收操作也是如此。</li>
+</ol><h2>问题解析</h2><p><strong>我们先来看第一个基本特性。</strong> 在同一时刻，Go语言的运行时系统（以下简称运行时系统）只会执行对同一个通道的任意个发送操作中的某一个。</p><p>直到这个元素值被完全复制进该通道之后，其他针对该通道的发送操作才可能被执行。</p><p>类似的，在同一时刻，运行时系统也只会执行，对同一个通道的任意个接收操作中的某一个。</p><p>直到这个元素值完全被移出该通道之后，其他针对该通道的接收操作才可能被执行。即使这些操作是并发执行的也是如此。</p><p>这里所谓的并发执行，你可以这样认为，多个代码块分别在不同的goroutine之中，并有机会在同一个时间段内被执行。</p><p>另外，对于通道中的同一个元素值来说，发送操作和接收操作之间也是互斥的。例如，虽然会出现，正在被复制进通道但还未复制完成的元素值，但是这时它绝不会被想接收它的一方看到和取走。</p><p><strong>这里要注意的一个细节是，元素值从外界进入通道时会被复制。更具体地说，进入通道的并不是在接收操作符右边的那个元素值，而是它的副本。</strong></p><p>另一方面，元素值从通道进入外界时会被移动。这个移动操作实际上包含了两步，第一步是生成正在通道中的这个元素值的副本，并准备给到接收方，第二步是删除在通道中的这个元素值。</p><p><strong>顺着这个细节再来看第二个基本特性。</strong> 这里的“不可分割”的意思是，它们处理元素值时都是一气呵成的，绝不会被打断。</p><p>例如，发送操作要么还没复制元素值，要么已经复制完毕，绝不会出现只复制了一部分的情况。</p><p>又例如，接收操作在准备好元素值的副本之后，一定会删除掉通道中的原值，绝不会出现通道中仍有残留的情况。</p><p>这既是为了保证通道中元素值的完整性，也是为了保证通道操作的唯一性。对于通道中的同一个元素值来说，它只可能是某一个发送操作放入的，同时也只可能被某一个接收操作取出。</p><p><strong>再来说第三个基本特性。</strong> 一般情况下，发送操作包括了“复制元素值”和“放置副本到通道内部”这两个步骤。</p><p>在这两个步骤完全完成之前，发起这个发送操作的那句代码会一直阻塞在那里。也就是说，在它之后的代码不会有执行的机会，直到这句代码的阻塞解除。</p><p>更细致地说，在通道完成发送操作之后，运行时系统会通知这句代码所在的goroutine，以使它去争取继续运行代码的机会。</p><p>另外，接收操作通常包含了“复制通道内的元素值”“放置副本到接收方”“删掉原值”三个步骤。</p><p>在所有这些步骤完全完成之前，发起该操作的代码也会一直阻塞，直到该代码所在的goroutine收到了运行时系统的通知并重新获得运行机会为止。</p><p>说到这里，你可能已经感觉到，<strong>如此阻塞代码其实就是为了实现操作的互斥和元素值的完整。</strong></p><p>下面我来说一个关于通道操作阻塞的问题。</p><h2>知识扩展</h2><p><strong>问题1：发送操作和接收操作在什么时候可能被长时间的阻塞？</strong></p><p>先说针对<strong>缓冲通道</strong>的情况。如果通道已满，那么对它的所有发送操作都会被阻塞，直到通道中有元素值被接收走。</p><p>这时，通道会优先通知最早因此而等待的、那个发送操作所在的goroutine，后者会再次执行发送操作。</p><p>由于发送操作在这种情况下被阻塞后，它们所在的goroutine会顺序地进入通道内部的发送等待队列，所以通知的顺序总是公平的。</p><p>相对的，如果通道已空，那么对它的所有接收操作都会被阻塞，直到通道中有新的元素值出现。这时，通道会通知最早等待的那个接收操作所在的goroutine，并使它再次执行接收操作。</p><p>因此而等待的、所有接收操作所在的goroutine，都会按照先后顺序被放入通道内部的接收等待队列。</p><p>对于<strong>非缓冲通道</strong>，情况要简单一些。无论是发送操作还是接收操作，一开始执行就会被阻塞，直到配对的操作也开始执行，才会继续传递。由此可见，非缓冲通道是在用同步的方式传递数据。也就是说，只有收发双方对接上了，数据才会被传递。</p><p>并且，数据是直接从发送方复制到接收方的，中间并不会用非缓冲通道做中转。相比之下，缓冲通道则在用异步的方式传递数据。</p><p>在大多数情况下，缓冲通道会作为收发双方的中间件。正如前文所述，元素值会先从发送方复制到缓冲通道，之后再由缓冲通道复制给接收方。</p><p>但是，当发送操作在执行的时候发现空的通道中，正好有等待的接收操作，那么它会直接把元素值复制给接收方。</p><p>以上说的都是在正确使用通道的前提下会发生的事情。下面我特别说明一下，由于错误使用通道而造成的阻塞。</p><p>对于值为<code>nil</code>的通道，不论它的具体类型是什么，对它的发送操作和接收操作都会永久地处于阻塞状态。它们所属的goroutine中的任何代码，都不再会被执行。</p><p>注意，由于通道类型是引用类型，所以它的零值就是<code>nil</code>。换句话说，当我们只声明该类型的变量但没有用<code>make</code>函数对它进行初始化时，该变量的值就会是<code>nil</code>。我们一定不要忘记初始化通道！</p><p>你可以去看一下demo21.go，我在里面用代码罗列了一下会造成阻塞的几种情况。</p><p><strong>问题2：发送操作和接收操作在什么时候会引发panic？</strong></p><p>对于一个已初始化，但并未关闭的通道来说，收发操作一定不会引发panic。但是通道一旦关闭，再对它进行发送操作，就会引发panic。</p><p>另外，如果我们试图关闭一个已经关闭了的通道，也会引发panic。注意，接收操作是可以感知到通道的关闭的，并能够安全退出。</p><p>更具体地说，当我们把接收表达式的结果同时赋给两个变量时，第二个变量的类型就是一定<code>bool</code>类型。它的值如果为<code>false</code>就说明通道已经关闭，并且再没有元素值可取了。</p><p>注意，如果通道关闭时，里面还有元素值未被取出，那么接收表达式的第一个结果，仍会是通道中的某一个元素值，而第二个结果值一定会是<code>true</code>。</p><p>因此，通过接收表达式的第二个结果值，来判断通道是否关闭是可能有延时的。</p><p>由于通道的收发操作有上述特性，所以除非有特殊的保障措施，我们千万不要让接收方关闭通道，而应当让发送方做这件事。这在demo22.go中有一个简单的模式可供参考。</p><h2>总结</h2><p>今天我们讲到了通道的一些常规操作，包括初始化、发送、接收和关闭。通道类型是Go语言特有的，所以你一开始肯定会感到陌生，其中的一些规则和奥妙还需要你铭记于心，并细心体会。</p><p>首先是在初始化通道时设定其容量的意义，这有时会让通道拥有不同的行为模式。对通道的发送操作和接收操作都有哪些基本特性，也是我们必须清楚的。</p><p>这涉及了它们什么时候会互斥，什么时候会造成阻塞，什么时候会引起panic，以及它们收发元素值的顺序是怎样的，它们是怎样保证元素值的完整性的，元素值通常会被复制几次，等等。</p><p>最后别忘了，通道也是Go语言的并发编程模式中重要的一员。</p><h2>思考题</h2><p>我希望你能通过试验获得下述问题的答案。</p><ol>
+<li>通道的长度代表着什么？它在什么时候会通道的容量相同？</li>
+<li>元素值在经过通道传递时会被复制，那么这个复制是浅表复制还是深层复制呢？</li>
+</ol><p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p><p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/9f/1d/ec173090.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">melon</span>
+                            </div>
+                            <div class="bd">感觉chanel有点像socket的同步阻塞模式，只不过channel的发送端和接收端共享一个缓冲，套接字则是发送这边有发送缓冲，接收这边有接收缓冲，而且socket接收端如果先close的话，发送端再发送数据的也会引发panic（linux上会触发SIG_PIPE信号，不处理程序就崩溃了）。<br><br>另使用demo21.go测试发送接收阻塞情况时需要额外空跑一个goroutine，否则会引发这样的panic（至 少1.11版是这样）：fatal error: all goroutines are asleep - deadlock! <br></div>
+                            <span class="time">2018-09-03 10:15</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对，所以注释中才会那么说。</p>
+                                <p class="reply-time">2018-09-03 14:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/41/f7/8345488c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">请叫我小岳同学</span>
+                            </div>
+                            <div class="bd">1. 通道的长度，表示channel 缓冲的长度。当channel处于阻塞状态时，容纳最多的同类型的长度。<br>2. 深拷贝 <br></div>
+                            <span class="time">2018-09-03 01:07</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">第一个问题，长度代表通道当前包含的元素个数，容量就是初始化时你设置的那个数。<br><br>第二个问题你再想想，可以做做试验。</p>
+                                <p class="reply-time">2018-09-03 15:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/21/b8/aca814dd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">江山如画</span>
+                            </div>
+                            <div class="bd">老师回复我后突然感觉不对劲，结构体是值类型，通道传输的时候会新拷贝一份对象，底层数据结构会被复制，引用类型可能就不一定了，又用数组和切片试了下，发现切片在通道传输的时候底层数据结构不会被复制，改了一个另外一个也会跟着改变，所以切片这里应该是浅复制，数组一个改了对另一个没有影响是深层复制，代码：<br><br>&#47;&#47;<br>	ch := make(chan []int, 1)<br>	s1 := []int{1, 2, 3}<br>	ch &lt;- s1<br>	s2 := &lt;-ch<br><br>	s2[0] = 100<br>	fmt.Println(s1, s2) &#47;&#47;[100 2 3] [100 2 3]<br><br>	&#47;&#47;<br>	ch2 := make(chan [3]int, 1)<br>	s3 := [3]int{1, 2, 3}<br>	ch2 &lt;- s3<br>	s4 := &lt;-ch2<br><br>	s3[0] = 100<br>	fmt.Println(s3, s4) &#47;&#47;[100 2 3] [1 2 3] <br></div>
+                            <span class="time">2018-09-03 18:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">再说一遍，Go语言里没有深层复制。数组是值类型，所以会被完全复制。</p>
+                                <p class="reply-time">2018-09-04 19:52</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">有铭</span>
+                            </div>
+                            <div class="bd">通道看上去像线程安全队列。那么这玩意在低层基于什么原理实现？cas？自旋？内核锁？性能如何 <br></div>
+                            <span class="time">2018-09-03 15:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/53/ec/3f6ae1aa.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">皮卡丘</span>
+                            </div>
+                            <div class="bd">很明显现象是浅拷贝，为啥那么多说深拷贝的 <br></div>
+                            <span class="time">2018-09-03 20:45</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d2/3e/f1258475.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">苏浅</span>
+                            </div>
+                            <div class="bd">通道必须要手动关闭吗？go会自动清理吗？ <br></div>
+                            <span class="time">2018-09-03 12:43</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">需要手动关闭，这是个很好的习惯，而且也可以利用关的动作来给接收方传递一个信号。Go的GC只会清理被分配到堆上的、不再有任何引用的对象。</p>
+                                <p class="reply-time">2018-09-03 14:53</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/5a/8c/cee414db.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">凯</span>
+                            </div>
+                            <div class="bd">请问一下go语言可以实现并行运算么？我接触到现在看到的好像都是并发而非并行。 <br></div>
+                            <span class="time">2018-10-07 15:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/53/14/2b93d757.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">colonel</span>
+                            </div>
+                            <div class="bd">通道底层存储数据的是链表还是数组？ <br></div>
+                            <span class="time">2018-09-23 14:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">环形链表</p>
+                                <p class="reply-time">2018-09-23 16:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/71/e5/bcdc382a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">My dream</span>
+                            </div>
+                            <div class="bd">老师，请教一下，通道的传值可以直接传指针不，你讲的拷贝，那么内存开销是很大的，如果通道传指针的话，会不会好很多 <br></div>
+                            <span class="time">2018-09-21 11:04</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">原则上可以传任何类型的数据。不过，要是传指针的话要自己保证安全啊，原始数据放篡改之类的。</p>
+                                <p class="reply-time">2018-09-23 16:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿拉丁的瓜灯儿</span>
+                            </div>
+                            <div class="bd">请问老师，缓冲通道内的值是被并行读出的吗？<br>比如两个goroutine分别为r1和r2；一个装满的容量为2的chan。<br>当r1正在取出先入的数据时，r2是否可以取出后入的数据；还是说r2必须阻塞，等到先入数据被完全取走之后才能开始读取后入的数据？ <br></div>
+                            <span class="time">2018-09-18 16:41</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以同时进行，通道是并发安全的。但是不一定哪个g拿到哪个元素值。</p>
+                                <p class="reply-time">2018-09-20 19:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/a3/47/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">忘怀</span>
+                            </div>
+                            <div class="bd">Go里没有深copy。<br>即便有的话这里可能也不会用吧，创建一个指针的内存开销绝大多数情况下要比重新开辟一块内存再把数据复制过来好的多吧。<br>老师，这么说对吗？ <br></div>
+                            <span class="time">2018-09-12 20:42</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对，这就是传指针值的好处之一。</p>
+                                <p class="reply-time">2018-09-15 09:42</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/49/db/ee5e8b43.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">新垣结裤</span>
+                            </div>
+                            <div class="bd">播音员的声音好磁性啊 <br></div>
+                            <span class="time">2018-09-11 21:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/81/66/7921c84a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wh</span>
+                            </div>
+                            <div class="bd">不要从接受端关闭channel算是基本原则了，另外如果有多个并发发送者，1个或多个接收者，有什么普适选择可以分享吗？ <br></div>
+                            <span class="time">2018-09-05 20:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以用另外的标志位做，比如context。</p>
+                                <p class="reply-time">2018-09-06 14:36</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/24/df/da37ff2b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Yayu</span>
+                            </div>
+                            <div class="bd">老师，我知道 golang 这门语言中所有的变量赋值操作都是 value copy的，不论这个变量是值类型，还是指针类型。关于您这里说的 shallow copy 与 deep copy 的问题我还是不是很清楚， google 了一下，每门语言的支持都不太一样，您是怎么定义这两个概念的？能否详细说一下？ <br></div>
+                            <span class="time">2018-09-05 10:22</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">浅拷贝只是拷贝值以及值中直接包含的东西，深拷贝就是把所有深层次的结构一并拷贝。</p>
+                                <p class="reply-time">2018-09-06 14:42</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/76/5f/cceadf96.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sophyu</span>
+                            </div>
+                            <div class="bd">请教老师：对于非缓冲通道c ，首先main goroutine创建一个task goroutine，再执行通道发送操作c &lt;- value …；main goroutine被阻塞；task goroutine执行，其中进行通道接收操作，value从main goroutine传输到task goroutine…此时是task goroutine继续往下执行呢？还是main goroutine执行？ <br></div>
+                            <span class="time">2018-09-04 00:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">写代码吧，这么说说不清楚。</p>
+                                <p class="reply-time">2018-09-04 19:46</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/52/81/745475e9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">colben</span>
+                            </div>
+                            <div class="bd">channel 是否可以通过 .Read() 和 .Write() 来读写？那个 “&lt;-“ 敲起来真心费劲，以前学 C 时就受不了那个结构体指针.成员变量写法“-&gt;” <br></div>
+                            <span class="time">2018-09-03 22:35</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不可以，这是基本的Go语言语法。</p>
+                                <p class="reply-time">2018-09-04 19:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/53/ec/3f6ae1aa.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">皮卡丘</span>
+                            </div>
+                            <div class="bd">长度代表缓冲的个数，当缓冲满时和容量相等<br>浅拷贝，可以改变发送方引用的值 <br></div>
+                            <span class="time">2018-09-03 18:58</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sket</span>
+                            </div>
+                            <div class="bd">go run .\demo21.go<br>fatal error: all goroutines are asleep - deadlock!<br><br>goroutine 1 [chan send]:<br>main.main()<br>        D:&#47;go&#47;src&#47;puzzlers&#47;article10&#47;q2&#47;demo21.go:7 +0x7a<br>exit status 2 <br></div>
+                            <span class="time">2018-12-18 17:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/5d/f8/de4b9d77.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">琪粼</span>
+                            </div>
+                            <div class="bd">“再说一遍，Go语言里没有深层复制。数组是值类型，所以会被完全复制。”<br>请教一下，切片对copy属于什么复制 <br></div>
+                            <span class="time">2018-12-14 10:49</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/49/09/58c0a054.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">实验室清洁工</span>
+                            </div>
+                            <div class="bd">接收操作通常包含了“复制通道内的元素值”“放置副本到接收方”“删掉原值”三个步骤。这里原值是指通道里的值吗？还是进入通道之前的值啊，或者两者都是？？ <br></div>
+                            <span class="time">2018-12-14 09:08</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

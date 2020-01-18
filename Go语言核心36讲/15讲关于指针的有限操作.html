@@ -1,0 +1,390 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                15讲关于指针的有限操作
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/d8/31/d8db1ef23c5f357741d18c85310fd931.jpeg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在前面的文章中，我们已经提到过很多次“指针”了，你应该已经比较熟悉了。不过，我们那时大多指的是指针类型及其对应的指针值，今天我们讲的则是更为深入的内容。</p>
+<p>让我们先来复习一下。</p>
+<pre><code>type Dog struct {
+	name string
+}
+
+func (dog *Dog) SetName(name string) {
+	dog.name = name
+}
+</code></pre>
+<p>对于基本类型<code>Dog</code>来说，<code>*Dog</code>就是它的指针类型。而对于一个<code>Dog</code>类型，值不为<code>nil</code>的变量<code>dog</code>，取址表达式<code>&amp;dog</code>的结果就是该变量的值（也就是基本值）的指针值。</p>
+<p>如果一个方法的接收者是<code>*Dog</code>类型的，那么该方法就是基本类型<code>Dog</code>的一个指针方法。</p>
+<p>在这种情况下，这个方法的接收者实际上就是当前的基本值的指针值。我们可以通过指针值无缝地访问到基本值包含的任何字段，以及调用与之关联的任何方法。这应该就是我们在编写Go程序的过程中，用得最频繁的“指针”了。</p>
+<p>从传统意义上说，指针是一个指向某个确切的内存地址的值。这个内存地址可以是任何数据或代码的起始地址，比如，某个变量、某个字段或某个函数。</p>
+<p>我们刚刚只提到了其中的一种情况，在Go语言中还有其他几样东西可以代表“指针”。其中最贴近传统意义的当属<code>uintptr</code>类型了。该类型实际上是一个数值类型，也是Go语言内建的数据类型之一。</p>
+<p>根据当前计算机的计算架构的不同，它可以存储32位或64位的无符号整数，可以代表任何指针的位（bit）模式，也就是原始的内存地址。</p><!-- [[[read_end]]] -->
+<p>再来看Go语言标准库中的<code>unsafe</code>包。<code>unsafe</code>包中有一个类型叫做<code>Pointer</code>，也代表了“指针”。</p>
+<p><code>unsafe.Pointer</code>可以表示任何指向可寻址的值的指针，同时它也是前面提到的指针值和<code>uintptr</code>值之间的桥梁。也就是说，通过它，我们可以在这两种值之上进行双向的转换。这里有一个很关键的词——可寻址的（addressable）。在我们继续说<code>unsafe.Pointer</code>之前，需要先要搞清楚这个词的确切含义。</p>
+<p><strong>今天的问题是：你能列举出Go语言中的哪些值是不可寻址的吗？</strong></p>
+<p><strong>这道题的典型回答是</strong>以下列表中的值都是不可寻址的。</p>
+<ul>
+<li>常量的值。</li>
+<li>基本类型值的字面量。</li>
+<li>算术操作的结果值。</li>
+<li>对各种字面量的索引表达式和切片表达式的结果值。不过有一个例外，对切片字面量的索引结果值却是可寻址的。</li>
+<li>对字符串变量的索引表达式和切片表达式的结果值。</li>
+<li>对字典变量的索引表达式的结果值。</li>
+<li>函数字面量和方法字面量，以及对它们的调用表达式的结果值。</li>
+<li>结构体字面量的字段值，也就是对结构体字面量的选择表达式的结果值。</li>
+<li>类型转换表达式的结果值。</li>
+<li>类型断言表达式的结果值。</li>
+<li>接收表达式的结果值。</li>
+</ul>
+<h2>问题解析</h2>
+<p>初看答案中的这些不可寻址的值好像并没有什么规律。不过别急，我们一起来梳理一下。你可以对照着demo35.go文件中的代码来看，这样应该会让你理解起来更容易一些。</p>
+<p>常量的值总是会被存储到一个确切的内存区域中，并且这种值肯定是<strong>不可变的</strong>。基本类型值的字面量也是一样，其实它们本就可以被视为常量，只不过没有任何标识符可以代表它们罢了。</p>
+<p>第一个关键词：不可变的。由于Go语言中的字符串值也是不可变的，所以对于一个字符串类型的变量来说，基于它的索引或切片的结果值也都是不可寻址的，因为即使拿到了这种值的内存地址也改变不了什么。</p>
+<p>算术操作的结果值属于一种<strong>临时结果</strong>。在我们把这种结果值赋给任何变量或常量之前，即使能拿到它的内存地址也是没有任何意义的。</p>
+<p>第二个关键词：临时结果。这个关键词能被用来解释很多现象。我们可以把各种对值字面量施加的表达式的求值结果都看做是临时结果。</p>
+<p>我们都知道，Go语言中的表达式有很多种，其中常用的包括以下几种。</p>
+<ul>
+<li>用于获得某个元素的索引表达式。</li>
+<li>用于获得某个切片（片段）的切片表达式。</li>
+<li>用于访问某个字段的选择表达式。</li>
+<li>用于调用某个函数或方法的调用表达式。</li>
+<li>用于转换值的类型的类型转换表达式。</li>
+<li>用于判断值的类型的类型断言表达式。</li>
+<li>向通道发送元素值或从通道那里接收元素值的接收表达式。</li>
+</ul>
+<p>我们把以上这些表达式施加在某个值字面量上一般都会得到一个临时结果。比如，对数组字面量和字典字面量的索引结果值，又比如，对数组字面量和切片字面量的切片结果值。它们都属于临时结果，都是不可寻址的。</p>
+<p>一个需要特别注意的例外是，对切片字面量的索引结果值是可寻址的。因为不论怎样，每个切片值都会持有一个底层数组，而这个底层数组中的每个元素值都是有一个确切的内存地址的。</p>
+<p>你可能会问，那么对切片字面量的切片结果值为什么却是不可寻址的？这是因为切片表达式总会返回一个新的切片值，而这个新的切片值在被赋给变量之前属于临时结果。</p>
+<p>你可能已经注意到了，我一直在说针对数组值、切片值或字典值的<strong>字面量</strong>的表达式会产生临时结果。如果针对的是数组类型或切片类型的<strong>变量</strong>，那么索引或切片的结果值就都不属于临时结果了，是可寻址的。</p>
+<p>这主要因为变量的值本身就不是“临时的”。对比而言，值字面量在还没有与任何变量（或者说任何标识符）绑定之前是没有落脚点的，我们无法以任何方式引用到它们。这样的值就是“临时的”。</p>
+<p>再说一个例外。我们通过对字典类型的变量施加索引表达式，得到的结果值不属于临时结果，可是，这样的值却是不可寻址的。原因是，字典中的每个键-元素对的存储位置都可能会变化，而且这种变化外界是无法感知的。</p>
+<p>我们都知道，字典中总会有若干个哈希桶用于均匀地储存键-元素对。当满足一定条件时，字典可能会改变哈希桶的数量，并适时地把其中的键-元素对搬运到对应的新的哈希桶中。</p>
+<p>在这种情况下，获取字典中任何元素值的指针都是无意义的，也是<strong>不安全的</strong>。我们不知道什么时候那个元素值会被搬运到何处，也不知道原先的那个内存地址上还会被存放什么别的东西。所以，这样的值就应该是不可寻址的。</p>
+<p>第三个关键词：不安全的。“不安全的”操作很可能会破坏程序的一致性，引发不可预知的错误，从而严重影响程序的功能和稳定性。</p>
+<p>再来看函数。函数在Go语言中是一等公民，所以我们可以把代表函数或方法的字面量或标识符赋给某个变量、传给某个函数或者从某个函数传出。但是，这样的函数和方法都是不可寻址的。一个原因是函数就是代码，是不可变的。</p>
+<p>另一个原因是，拿到指向一段代码的指针是不安全的。此外，对函数或方法的调用结果值也是不可寻址的，这是因为它们都属于临时结果。</p>
+<p>至于典型回答中最后列出的那几种值，由于都是针对值字面量的某种表达式的结果值，所以都属于临时结果，都不可寻址。</p>
+<p>好了，说了这么多，希望你已经有所领悟了。我来总结一下。</p>
+<ol>
+<li><strong>不可变的</strong>值不可寻址。常量、基本类型的值字面量、字符串变量的值、函数以及方法的字面量都是如此。其实这样规定也有安全性方面的考虑。</li>
+<li>绝大多数被视为<strong>临时结果</strong>的值都是不可寻址的。算术操作的结果值属于临时结果，针对值字面量的表达式结果值也属于临时结果。但有一个例外，对切片字面量的索引结果值虽然也属于临时结果，但却是可寻址的。</li>
+<li>若拿到某值的指针可能会破坏程序的一致性，那么就是<strong>不安全的</strong>，该值就不可寻址。由于字典的内部机制，对字典的索引结果值的取址操作都是不安全的。另外，获取由字面量或标识符代表的函数或方法的地址显然也是不安全的。</li>
+</ol>
+<p>最后说一句，如果我们把临时结果赋给一个变量，那么它就是可寻址的了。如此一来，取得的指针指向的就是这个变量持有的那个值了。</p>
+<h2>知识扩展</h2>
+<p><strong>问题1：不可寻址的值在使用上有哪些限制？</strong></p>
+<p>首当其冲的当然是无法使用取址操作符<code>&amp;</code>获取它们的指针了。不过，对不可寻址的值施加取址操作都会使编译器报错，所以倒是不用太担心，你只要记住我在前面讲述的那几条规律，并在编码的时候提前注意一下就好了。</p>
+<p>我们来看下面这个小问题。我们依然以那个结构体类型<code>Dog</code>为例。</p>
+<pre><code>func New(name string) Dog {
+	return Dog{name}
+}
+</code></pre>
+<p>我们再为它编写一个函数<code>New</code>。这个函数会接受一个名为<code>name</code>的<code>string</code>类型的参数，并会用这个参数初始化一个<code>Dog</code>类型的值，最后返回该值。我现在要问的是：如果我调用该函数，并直接以链式的手法调用其结果值的指针方法<code>SetName</code>，那么可以达到预期的效果吗？</p>
+<pre><code>New(&quot;little pig&quot;).SetName(&quot;monster&quot;)
+</code></pre>
+<p>如果你还记得我在前面讲述的内容，那么肯定会知道调用<code>New</code>函数所得到的结果值属于临时结果，是不可寻址的。</p>
+<p>可是，那又怎样呢？别忘了，我在讲结构体类型及其方法的时候还说过，我们可以在一个基本类型的值上调用它的指针方法，这是因为Go语言会自动地帮我们转译。</p>
+<p>更具体地说，对于一个<code>Dog</code>类型的变量<code>dog</code>来说，调用表达式<code>dog.SetName(&quot;monster&quot;)</code>会被自动地转译为<code>(&amp;dog).SetName(&quot;monster&quot;)</code>，即：先取<code>dog</code>的指针值，再在该指针值上调用<code>SetName</code>方法。</p>
+<p>发现问题了吗？由于<code>New</code>函数的调用结果值是不可寻址的，所以无法对它进行取址操作。因此，上边这行链式调用会让编译器报告两个错误，一个是果，即：不能在<code>New(&quot;little pig&quot;)</code>的结果值上调用指针方法。一个是因，即：不能取得<code>New(&quot;little pig&quot;)</code>的地址。</p>
+<p>除此之外，我们都知道，Go语言中的<code>++</code>和<code>--</code>并不属于操作符，而分别是自增语句和自减语句的重要组成部分。</p>
+<p>虽然Go语言规范中的语法定义是，只要在<code>++</code>或<code>--</code>的左边添加一个表达式，就可以组成一个自增语句或自减语句，但是，它还明确了一个很重要的限制，那就是这个表达式的结果值必须是可寻址的。这就使得针对值字面量的表达式几乎都无法被用在这里。</p>
+<p>不过这有一个例外，虽然对字典字面量和字典变量索引表达式的结果值都是不可寻址的，但是这样的表达式却可以被用在自增语句和自减语句中。</p>
+<p>与之类似的规则还有两个。一个是，在赋值语句中，赋值操作符左边的表达式的结果值必须可寻址的，但是对字典的索引结果值也是可以的。</p>
+<p>另一个是，在带有<code>range</code>子句的<code>for</code>语句中，在<code>range</code>关键字左边的表达式的结果值也都必须是可寻址的，不过对字典的索引结果值同样可以被用在这里。以上这三条规则我们合并起来记忆就可以了。</p>
+<p>与这些定死的规则相比，我刚刚讲到的那个与指针方法有关的问题，你需要好好理解一下，它涉及了两个知识点的联合运用。起码在我面试的时候，它是一个可选择的考点。</p>
+<p><strong>问题 2：怎样通过<code>unsafe.Pointer</code>操纵可寻址的值？</strong></p>
+<p>前边的基础知识很重要。不过现在让我们再次关注指针的用法。我说过，<code>unsafe.Pointer</code>是像<code>*Dog</code>类型的值这样的指针值和<code>uintptr</code>值之间的桥梁，那么我们怎样利用<code>unsafe.Pointer</code>的中转和<code>uintptr</code>的底层操作来操纵像<code>dog</code>这样的值呢？</p>
+<p>首先说明，这是一项黑科技。它可以绕过Go语言的编译器和其他工具的重重检查，并达到潜入内存修改数据的目的。这并不是一种正常的编程手段，使用它会很危险，很有可能造成安全隐患。</p>
+<p>我们总是应该优先使用常规代码包中提供的API去编写程序，当然也可以把像<code>reflect</code>以及<code>go/ast</code>这样的代码包作为备选项。作为上层应用的开发者，请谨慎地使用<code>unsafe</code>包中的任何程序实体。</p>
+<p>不过既然说到这里了，我们还是要来一探究竟的。请看下面的代码：</p>
+<pre><code>dog := Dog{&quot;little pig&quot;}
+dogP := &amp;dog
+dogPtr := uintptr(unsafe.Pointer(dogP))
+</code></pre>
+<p>我先声明了一个<code>Dog</code>类型的变量<code>dog</code>，然后用取址操作符<code>&amp;</code>，取出了它的指针值，并把它赋给了变量<code>dogP</code>。</p>
+<p>最后，我使用了两个类型转换，先把<code>dogP</code>转换成了一个<code>unsafe.Pointer</code>类型的值，然后紧接着又把后者转换成了一个<code>uintptr</code>的值，并把它赋给了变量<code>dogPtr</code>。这背后隐藏着一些转换规则，如下：</p>
+<ol>
+<li>一个指针值（比如<code>*Dog</code>类型的值）可以被转换为一个<code>unsafe.Pointer</code>类型的值，反之亦然。</li>
+<li>一个<code>uintptr</code>类型的值也可以被转换为一个<code>unsafe.Pointer</code>类型的值，反之亦然。</li>
+<li>一个指针值无法被直接转换成一个<code>uintptr</code>类型的值，反过来也是如此。</li>
+</ol>
+<p>所以，对于指针值和<code>uintptr</code>类型值之间的转换，必须使用<code>unsafe.Pointer</code>类型的值作为中转。那么，我们把指针值转换成<code>uintptr</code>类型的值有什么意义吗？</p>
+<pre><code>namePtr := dogPtr + unsafe.Offsetof(dogP.name)
+nameP := (*string)(unsafe.Pointer(namePtr))
+</code></pre>
+<p>这里需要与<code>unsafe.Offsetof</code>函数搭配使用才能看出端倪。<code>unsafe.Offsetof</code>函数用于获取两个值在内存中的起始存储地址之间的偏移量，以字节为单位。</p>
+<p>这两个值一个是某个字段的值，另一个是该字段值所属的那个结构体值。我们在调用这个函数的时候，需要把针对字段的选择表达式传给它，比如<code>dogP.name</code>。</p>
+<p>有了这个偏移量，又有了结构体值在内存中的起始存储地址（这里由<code>dogPtr</code>变量代表），把它们相加我们就可以得到<code>dogP</code>的<code>name</code>字段值的起始存储地址了。这个地址由变量<code>namePtr</code>代表。</p>
+<p>此后，我们可以再通过两次类型转换把<code>namePtr</code>的值转换成一个<code>*string</code>类型的值，这样就得到了指向<code>dogP</code>的<code>name</code>字段值的指针值。</p>
+<p>你可能会问，我直接用取址表达式<code>&amp;(dogP.name)</code>不就能拿到这个指针值了吗？干嘛绕这么大一圈呢？你可以想象一下，如果我们根本就不知道这个结构体类型是什么，也拿不到<code>dogP</code>这个变量，那么还能去访问它的<code>name</code>字段吗？</p>
+<p>答案是，只要有<code>namePtr</code>就可以。它就是一个无符号整数，但同时也是一个指向了程序内部数据的内存地址。它可能会给我们带来一些好处，比如可以直接修改埋藏得很深的内部数据。</p>
+<p>但是，一旦我们有意或无意地把这个内存地址泄露出去，那么其他人就能够肆意地改动<code>dogP.name</code>的值，以及周围的内存地址上存储的任何数据了。</p>
+<p>即使他们不知道这些数据的结构也无所谓啊，改不好还改不坏吗？不正确地改动一定会给程序带来不可预知的问题，甚至造成程序崩溃。这可能还是最好的灾难性后果；所以我才说，使用这种非正常的编程手段会很危险。</p>
+<p>好了，现在你知道了这种手段，也知道了它的危险性，那就谨慎对待，防患于未然吧。</p>
+<h2>总结</h2>
+<p>我们今天集中说了说与指针有关的问题。基于基本类型的指针值应该是我们最常用到的，也是我们最需要关注的，比如<code>*Dog</code>类型的值。怎样得到一个这样的指针值呢？这需要用到取址操作和操作符<code>&amp;</code>。</p>
+<p>不过这里还有个前提，那就是取址操作的操作对象必须是可寻址的。关于这方面你需要记住三个关键词：不可变的、临时结果和不安全的。只要一个值符合了这三个关键词中的任何一个，它就是不可寻址的。</p>
+<p>但有一个例外，对切片字面量的索引结果值是可寻址的。那么不可寻址的值在使用上有哪些限制呢？一个最重要的限制是关于指针方法的，即：无法调用一个不可寻址值的指针方法。这涉及了两个知识点的联合运用。</p>
+<p>相比于刚说到的这些，<code>unsafe.Pointer</code>类型和<code>uintptr</code>类型的重要性好像就没那么高了。它们的值同样可以代表指针，并且比前面说的指针值更贴近于底层和内存。</p>
+<p>虽然我们可以利用它们去访问或修改一些内部数据，而且就灵活性而言，这种要比通用的方式高很多，但是这往往也会带来不容小觑的安全隐患。</p>
+<p>因此，在很多时候，使用它们操纵数据是弊大于利的。不过，对于硬币的背面，我们也总是有必要去了解的。</p>
+<h2>思考题</h2>
+<p>今天的思考题是：引用类型的值的指针值是有意义的吗？如果没有意义，为什么？如果有意义，意义在哪里？</p>
+<p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p>
+<p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt="" /></p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/a2/ac/5fb8adf9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sun</span>
+                            </div>
+                            <div class="bd">在描述不可寻址那部分有很多名词，要是能分别有段示例一下就好了，对照起来会更清晰 <br></div>
+                            <span class="time">2018-09-17 09:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/21/b8/aca814dd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">江山如画</span>
+                            </div>
+                            <div class="bd">引用类型的指针值有意义。<br><br>以切片为例：fmt.Printf(&quot;%p\n&quot;, sli) 和 fmt.Printf(&quot;%p\n&quot;, &amp;sli[0]) 打印的都是底层数组元素的地址。<br>而 fmt.Printf(&quot;%p\n&quot;, &amp;sli) 打印的是切片结构体的内存地址，验证代码如下：<br><br>arr := [3]int{1, 2, 3}<br>fmt.Printf(&quot;%p\n&quot;, &amp;arr) &#47;&#47;0xc0000161e0<br><br>sli := arr[:]<br>fmt.Printf(&quot;%p\n&quot;, sli)     &#47;&#47;0xc0000161e0<br>fmt.Printf(&quot;%p\n&quot;, &amp;sli[0]) &#47;&#47;0xc0000161e0<br><br>fmt.Printf(&quot;%p\n&quot;, &amp;sli)          &#47;&#47;0xc00000a080<br>fmt.Println(unsafe.Pointer(&amp;sli)) &#47;&#47;0xc00000a080<br><br>sliHeader := (*reflect.SliceHeader)(unsafe.Pointer(&amp;sli))<br>fmt.Printf(&quot;0x%10x\n&quot;, sliHeader.Data) &#47;&#47;0xc0000161e0<br><br>可以看到，使用 %p 打印地址的时候：&amp;sli 和 unsafe.Pointer(&amp;sli) 都指向了切片结构体的地址，&amp;arr，sli ，&amp;sli[0]，sliHeader.Data 都指向了底层数组。<br> <br></div>
+                            <span class="time">2018-09-17 12:51</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/b7/f9/a8f26b10.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">jacke</span>
+                            </div>
+                            <div class="bd">字面量有人理解吗？求解释 <br></div>
+                            <span class="time">2018-10-13 11:23</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">说白了就是用于表示值或者类型的代码段。比如：1234就是代表整数值的字面量，int64就是代表类型的字面量。很简单，不用想的太复杂。</p>
+                                <p class="reply-time">2018-10-15 12:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/fc/7b/aa9c0afe.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">高鸿祥</span>
+                            </div>
+                            <div class="bd">动态语言过来的人表示看不懂😁 <br></div>
+                            <span class="time">2018-09-24 01:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">有铭</span>
+                            </div>
+                            <div class="bd">C里的指针是用来直接操作内存的，因为C里有大量的操作是必须靠操作内存完成的。那么go这种带有GC，不需要手动分配内存的语言，指针存在的意义在哪里呢，Go里的指针在何时有“不得不使用”的意义呢？ <br></div>
+                            <span class="time">2018-09-14 15:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">没有非得使用的必要。指针类型及其值最常用，因为可以达到传址的效果。</p>
+                                <p class="reply-time">2018-09-15 09:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/2d/18/67911770.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">objcoding</span>
+                            </div>
+                            <div class="bd">既然知道dogPtr，那么必然也知道dogP的值，也就是可以通过dogP去那name的值了，不是很理解 <br></div>
+                            <span class="time">2018-09-14 09:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c9/40/b2e33f00.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">nuczzz</span>
+                            </div>
+                            <div class="bd">get新技能: unsafe.Pointer+ uintptr突破私有成员访问！ <br></div>
+                            <span class="time">2018-11-16 07:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/13/00/a4a2065f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Michael</span>
+                            </div>
+                            <div class="bd">“引用类型的值得指针值” 同C语言中 “指针的指针” 应该是一个概念；<br><br>假设，有一个值类型 T，那么类型T的引用类型就是：*T，引用类型值得指针值类型就是：**T。<br><br>var t = T{}       &#47;&#47; T<br>var pt = &amp;T     &#47;&#47; *T<br>var ppt = &amp;pt  &#47;&#47; **T<br><br>但是具体的意义与使用场景还没想到，也没有遇到过，若老师不嫌弃，还请老师指出 <br></div>
+                            <span class="time">2018-09-17 23:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">在Go需要中所谓的指针的指针最好不要用，Go也是想避免这种复杂性才搞出来引用类型的。</p>
+                                <p class="reply-time">2018-09-20 19:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/7f/d3/b5896293.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Realm</span>
+                            </div>
+                            <div class="bd">1 “引用类型的值的指针 ”与 “引用类型的值的值指针”是两个概念？<br><br>2  值的值指针是类似切片、字典、通道内的元素的指针吗？<br><br>如果是，那老师的思考题，引用类型的值的值指针的意义：是不是用此指针来取元素的值？ <br></div>
+                            <span class="time">2018-09-14 14:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我没说过“值指针”这个词。“引用类型的值的指针值”的含义你不理解还是？</p>
+                                <p class="reply-time">2018-09-15 09:34</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4f/78/c3d8ecb0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">undifined</span>
+                            </div>
+                            <div class="bd">老师 有一点没有理解，namePtr := dogPtr + unsafe.Offsetof(dogP.name)这里如果不知道这个属性是什么，怎么才能取到这个字段的便宜量呢 <br></div>
+                            <span class="time">2018-09-14 11:29</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不知道？不知道就没法取了。</p>
+                                <p class="reply-time">2018-09-15 09:37</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/0e/9c/cb9da823.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">猫王者</span>
+                            </div>
+                            <div class="bd">go语言的引用类型本质还是结构体，包括切片，字典还有接口，底层都是用结构体来实现，引用类型的地址就是这个底层结构体的地址吧 <br></div>
+                            <span class="time">2018-10-09 11:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4a/96/99466a06.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Laughing</span>
+                            </div>
+                            <div class="bd">引用类型的值的指针，还是主要用于指针传递吧，比如做一些引用类型的复制？ <br></div>
+                            <span class="time">2018-10-05 12:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/53/e3/39dcfb11.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">来碗绿豆汤</span>
+                            </div>
+                            <div class="bd">翻译过来，问题就是值的指针的存储地址的指针有没有意义？有意义，有意义，因为它可以改变指针所值的变量 <br></div>
+                            <span class="time">2018-09-16 14:43</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

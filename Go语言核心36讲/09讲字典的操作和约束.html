@@ -1,0 +1,376 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                09讲字典的操作和约束
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/00/c4/007374013e87144420fa95f8a45648c4.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>至今为止，我们讲过的集合类的高级数据类型都属于针对单一元素的容器。</p><p>它们或用连续存储，或用互存指针的方式收纳元素，这里的每个元素都代表了一个从属某一类型的独立值。</p><p>我们今天要讲的字典（map）却不同，它能存储的不是单一值的集合，而是键值对的集合。</p><blockquote>
+<p><span class="reference">什么是键值对？它是从英文key-value pair直译过来的一个词。顾名思义，一个键值对就代表了一对键和值。</span></p>
+<p><span class="reference">注意，一个“键”和一个“值”分别代表了一个从属于某一类型的独立值，把它们两个捆绑在一起就是一个键值对了。</span></p>
+</blockquote><p>在Go语言规范中，应该是为了避免歧义，他们将键值对换了一种称呼，叫做：“键-元素对”。我们也沿用这个看起来更加清晰的词来讲解。</p><h2>知识前导：为什么字典的键类型会受到约束？</h2><p>Go语言的字典类型其实是一个哈希表（hash table）的特定实现，在这个实现中，键和元素的最大不同在于，键的类型是受限的，而元素却可以是任意类型的。</p><p>如果要探究限制的原因，我们就先要了解哈希表中最重要的一个过程：映射。</p><p>你可以把键理解为元素的一个索引，我们可以在哈希表中通过键查找与它成对的那个元素。</p><p>键和元素的这种对应关系，在数学里就被称为“映射”，这也是“map”这个词的本意，哈希表的映射过程就存在于对键-元素对的增、删、改、查的操作之中。</p><!-- [[[read_end]]] --><pre><code>aMap := map[string]int{
+	&quot;one&quot;:    1,
+	&quot;two&quot;:    2,
+	&quot;three&quot;: 3,
+}
+k := &quot;two&quot;
+v, ok := aMap[k]
+if ok {
+	fmt.Printf(&quot;The element of key %q: %d\n&quot;, k, v)
+} else {
+	fmt.Println(&quot;Not found!&quot;)
+}
+</code></pre><p>比如，我们要在哈希表中查找与某个键值对应的那个元素值，那么我们需要先把键值作为参数传给这个哈希表。</p><p>哈希表会先用哈希函数（hash function）把键值转换为哈希值。哈希值通常是一个无符号的整数。一个哈希表会持有一定数量的桶（bucket），我们也可以叫它哈希桶，这些哈希桶会均匀地储存其所属哈希表收纳的键-元素对。</p><p>因此，哈希表会先用这个键哈希值的低几位去定位到一个哈希桶，然后再去这个哈希桶中，查找这个键。</p><p>由于键-元素对总是被捆绑在一起存储的，所以一旦找到了键，就一定能找到对应的元素值。随后，哈希表就会把相应的元素值作为结果返回。</p><p>只要这个键-元素对存在哈希表中就一定会被查找到，因为哈希表增、改、删键-元素对时的映射过程，与前文所述如出一辙。</p><p><strong>现在我们知道了，映射过程的第一步就是：把键值转换为哈希值。</strong></p><p>在Go语言的字典中，每一个键值都是由它的哈希值代表的。也就是说，字典不会独立存储任何键的值，但会独立存储它们的哈希值。</p><p>你是不是隐约感觉到了什么？我们接着往下看。</p><p><strong>我们今天的问题是：字典的键类型不能是哪些类型？</strong></p><p>这个问题你可以在Go语言规范中找到答案，但却没那么简单。它的典型回答是：Go语言字典的键类型不可以是函数类型、字典类型和切片类型。</p><h2>问题解析</h2><p>我们来解析一下这个问题。</p><p>Go语言规范规定，在键类型的值之间必须可以施加操作符<code>==</code>和<code>!=</code>。换句话说，键类型的值必须要支持判等操作。由于函数类型、字典类型和切片类型的值并不支持判等操作，所以字典的键类型不能是这些类型。</p><p>另外，如果键的类型是接口类型的，那么键值的实际类型也不能是上述三种类型，否则在程序运行过程中会引发panic（即运行时恐慌）。</p><p>我们举个例子：</p><pre><code>var badMap2 = map[interface{}]int{
+	&quot;1&quot;:   1,
+	[]int{2}: 2, // 这里会引发panic。
+	3:    3,
+}
+</code></pre><p>这里的变量<code>badMap2</code>的类型是键类型为<code>interface{}</code>、值类型为<code>int</code>的字典类型。这样声明并不会引起什么错误。或者说，我通过这样的声明躲过了Go语言编译器的检查。</p><p>注意，我用字面量在声明该字典的同时对它进行了初始化，使它包含了三个键-元素对。其中第二个键-元素对的键值是<code>[]int{2}</code>，元素值是<code>2</code>。这样的键值也不会让Go语言编译器报错，因为从语法上说，这样做是可以的。</p><p>但是，当我们运行这段代码的时候，Go语言的运行时（runtime）系统就会发现这里的问题，它会抛出一个panic，并把根源指向字面量中定义第二个键-元素对的那一行。我们越晚发现问题，修正问题的成本就会越高，所以最好不要把字典的键类型设定为任何接口类型。如果非要这么做，请一定确保代码在可控的范围之内。</p><p>还要注意，如果键的类型是数组类型，那么还要确保该类型的元素类型不是函数类型、字典类型或切片类型。</p><p>比如，由于类型<code>[1][]string</code>的元素类型是<code>[]string</code>，所以它就不能作为字典类型的键类型。另外，如果键的类型是结构体类型，那么还要保证其中字段的类型的合法性。无论不合法的类型被埋藏得有多深，比如<code>map[[1][2][3][]string]int</code>，Go语言编译器都会把它揪出来。</p><p>你可能会有疑问，为什么键类型的值必须支持判等操作？我在前面说过，Go语言一旦定位到了某一个哈希桶，那么就会试图在这个桶中查找键值。具体是怎么找的呢？</p><p>首先，每个哈希桶都会把自己包含的所有键的哈希值存起来。Go语言会用被查找键的哈希值与这些哈希值逐个对比，看看是否有相等的。如果一个相等的都没有，那么就说明这个桶中没有要查找的键值，这时Go语言就会立刻返回结果了。</p><p>如果有相等的，那就再用键值本身去对比一次。为什么还要对比？原因是，不同值的哈希值是可能相同的。这有个术语，叫做“哈希碰撞”。</p><p>所以，即使哈希值一样，键值也不一定一样。如果键类型的值之间无法判断相等，那么此时这个映射的过程就没办法继续下去了。最后，只有键的哈希值和键值都相等，才能说明查找到了匹配的键-元素对。</p><p>以上内容涉及的示例都在demo18.go中。</p><h2>知识扩展</h2><p><strong>问题1：应该优先考虑哪些类型作为字典的键类型？</strong></p><p>你现在已经清楚了，在Go语言中，有些类型的值是支持判等的，有些是不支持的。那么在这些值支持判等的类型当中，哪些更适合作为字典的键类型呢？</p><p>这里先抛开我们使用字典时的上下文，只从性能的角度看。在前文所述的映射过程中，“把键值转换为哈希值”以及“把要查找的键值与哈希桶中的键值做对比”， 明显是两个重要且比较耗时的操作。</p><p>因此，可以说，<strong>求哈希和判等操作的速度越快，对应的类型就越适合作为键类型。</strong></p><p>对于所有的基本类型、指针类型，以及数组类型、结构体类型和接口类型，Go语言都有一套算法与之对应。这套算法中就包含了哈希和判等。以求哈希的操作为例，宽度越小的类型速度通常越快。对于布尔类型、整数类型、浮点数类型、复数类型和指针类型来说都是如此。对于字符串类型，由于它的宽度是不定的，所以要看它的值的具体长度，长度越短求哈希越快。</p><p>类型的宽度是指它的单个值需要占用的字节数。比如，<code>bool</code>、<code>int8</code>和<code>uint8</code>类型的一个值需要占用的字节数都是<code>1</code>，因此这些类型的宽度就都是<code>1</code>。</p><p>以上说的都是基本类型，再来看高级类型。对数组类型的值求哈希实际上是依次求得它的每个元素的哈希值并进行合并，所以速度就取决于它的元素类型以及它的长度。细则同上。</p><p>与之类似，对结构体类型的值求哈希实际上就是对它的所有字段值求哈希并进行合并，所以关键在于它的各个字段的类型以及字段的数量。而对于接口类型，具体的哈希算法，则由值的实际类型决定。</p><p>我不建议你使用这些高级数据类型作为字典的键类型，不仅仅是因为对它们的值求哈希，以及判等的速度较慢，更是因为在它们的值中存在变数。</p><p>比如，对一个数组来说，我可以任意改变其中的元素值，但在变化前后，它却代表了两个不同的键值。</p><p>对于结构体类型的值情况可能会好一些，因为如果我可以控制其中各字段的访问权限的话，就可以阻止外界修改它了。把接口类型作为字典的键类型最危险。</p><p>还记得吗？如果在这种情况下Go运行时系统发现某个键值不支持判等操作，那么就会立即抛出一个panic。在最坏的情况下，这足以使程序崩溃。</p><p>那么，在那些基本类型中应该优先选择哪一个？答案是，优先选用数值类型和指针类型，通常情况下类型的宽度越小越好。如果非要选择字符串类型的话，最好对键值的长度进行额外的约束。</p><p>那什么是不通常的情况？笼统地说，Go语言有时会对字典的增、删、改、查操作做一些优化。</p><p>比如，在字典的键类型为字符串类型的情况下；又比如，在字典的键类型为宽度为<code>4</code>或<code>8</code>的整数类型的情况下。</p><p><strong>问题2：在值为<code>nil</code>的字典上执行读操作会成功吗，那写操作呢？</strong></p><p>好了，为了避免烧脑太久，我们再来说一个简单些的问题。由于字典是引用类型，所以当我们仅声明而不初始化一个字典类型的变量的时候，它的值会是<code>nil</code>。</p><p>在这样一个变量上试图通过键值获取对应的元素值，或者添加键-元素对，会成功吗？这个问题虽然简单，但却是我们必须铭记于心的，因为这涉及程序运行时的稳定性。</p><p>我来说一下答案。除了添加键-元素对，我们在一个值为<code>nil</code>的字典上做任何操作都不会引起错误。当我们试图在一个值为<code>nil</code>的字典中添加键-元素对的时候，Go语言的运行时系统就会立即抛出一个panic。你可以运行一下demo19.go文件试试看。</p><p><strong>总结</strong></p><p>我们这次主要讨论了与字典类型有关的，一些容易让人困惑的问题。比如，为什么字典的键类型会受到约束？又比如，我们通常应该选取什么样的类型作为字典的键类型。</p><p>我以Go语言规范为起始，并以Go语言源码为依据回答了这些问题。认真看了这篇文章之后，你应该对字典中的映射过程有了一定的理解。</p><p>另外，对于Go语言在那些合法的键类型上所做的求哈希和判等的操作，你也应该有所了解了。</p><p>再次强调，永远要注意那些可能引发panic的操作，比如像一个值为<code>nil</code>的字典添加键-元素对。</p><p><strong>思考题</strong></p><p>今天的思考题是关于并发安全性的。更具体地说，在同一时间段内但在不同的goroutine（或者说go程）中对同一个值进行操作是否是安全的。这里的安全是指，该值不会因这些操作而产生混乱，或其它不可预知的问题。</p><p>具体的思考题是：字典类型的值是并发安全的吗？如果不是，那么在我们只在字典上添加或删除键-元素对的情况下，依然不安全吗？感谢你的收听，我们下期再见。</p><p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p><p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/21/b8/aca814dd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">江山如画</span>
+                            </div>
+                            <div class="bd">非原子操作需要加锁， map并发读写需要加锁，map操作不是并发安全的，判断一个操作是否是原子的可以使用 go run race 命令做数据的竞争检测 <br></div>
+                            <span class="time">2018-09-01 13:55</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">说得很对</p>
+                                <p class="reply-time">2018-09-01 19:31</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/fa/f4/506b9460.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张民</span>
+                            </div>
+                            <div class="bd">郝大，有个疑问:文中描述“也就是说，字典不会存储任何键值，只会存储它们的哈希值。“ 但是在查找的时候，根据键值的哈希找到后，又去比较键值，防止哈希碰撞。但是键值没有存储怎么比较？ <br></div>
+                            <span class="time">2018-08-31 13:23</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">哈希桶里的结构是，“键的哈希值-内部结构”对的集合，这个内部结构的结构是“键1元素1键2元素2键3元素3”，是一块连续的内存。在通过键的哈希值定位找到哈希桶和那个“键的哈希值-内部结构”对之后，就开始在这个内部结构里找有没有这个键。后边的事情你应该都知道了。</p>
+                                <p class="reply-time">2018-09-01 19:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b5/00/4093f39a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">杨赛</span>
+                            </div>
+                            <div class="bd">希望有点深度。 <br></div>
+                            <span class="time">2018-09-01 09:49</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/69/b5/1e1731cc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">zs阿帅</span>
+                            </div>
+                            <div class="bd">能不能在深剖析下go map底层实现机制，配合源码讲解 <br></div>
+                            <span class="time">2018-08-31 08:49</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/9f/1d/ec173090.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">melon</span>
+                            </div>
+                            <div class="bd">goroutine 并发读写 map 会触发 fatal error: concurrent map read and map write 这样的运行时错误 ，可以试一下下面这个例子看效果：<br>package main<br><br>import (<br>    &quot;fmt&quot;<br>    &quot;time&quot;<br>)<br><br>func main() {<br>    m := map[int]string {<br>        1 : &quot;haha&quot;,<br>    }<br><br>    go read(m)<br>    time.Sleep(time.Second)<br>    go write(m)<br>    time.Sleep(30*time.Second)<br>    fmt.Println(m)<br>}<br><br>func read(m map[int]string) {<br>    for {<br>        _ = m[1]<br>        time.Sleep(1)<br>    }<br>}<br><br>func write(m map[int]string) {<br>    for {<br>        m[1] = &quot;write&quot; <br>        time.Sleep(1)<br>    }<br>}<br><br>可以通过 go run -race 来检测代码是否存在这种潜在的并发读写<br>通过 sync.Map 或自己使用sync.RWMutex自己实现并发互斥逻辑 <br></div>
+                            <span class="time">2018-08-31 11:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4a/96/99466a06.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Laughing</span>
+                            </div>
+                            <div class="bd">字典并发并不安全，对字典操作最好用1.9之后新加入的sync.Map，如果不用的话需要对goroutine加读写锁了。 <br></div>
+                            <span class="time">2018-08-31 09:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/7b/9e/37d69ff0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">balancer</span>
+                            </div>
+                            <div class="bd">希望后面层层深入，深入到，go的并发实现原理核内存管理（听到有开发者遇到内存持续不降的问题，这一点我猜测是gc上面）、错误处理、运行时多态、模板 <br></div>
+                            <span class="time">2018-08-31 11:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/df/e2/823a04b4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小小笑儿</span>
+                            </div>
+                            <div class="bd">不是，要并发安全的应该用sync.Map <br></div>
+                            <span class="time">2018-08-31 08:27</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/42/7c/f2b44a70.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Nixus</span>
+                            </div>
+                            <div class="bd">nil的map，既然不能添加key-element，是否也就意味着这样的map是没有任何意义的？在使用中，应避免用`var m map[string]int` 这种方式来声明map呢？ <br></div>
+                            <span class="time">2018-10-28 19:09</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">可以对m直接用索引表达式添加啊。</p>
+                                <p class="reply-time">2018-11-06 13:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/42/9d/c36b7ef7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">顾骨</span>
+                            </div>
+                            <div class="bd">“哈希桶里的结构是，“键的哈希值-内部结构”对的集合，这个内部结构的结构是“键1元素1键2元素2键3元素3”，是一块连续的内存。在通过键的哈希值定位找到哈希桶和那个“键的哈希值-内部结构”对之后，就开始在这个内部结构里找有没有这个键。后边的事情你应该都知道了。”<br><br>引用下，内部结构的结构是“键1元素1键2元素2键3元素3”的存储方式，那怎么知道键的宽度是多少呢？会不会将键和元素一起当做一个键来处理了？ <br></div>
+                            <span class="time">2018-10-18 09:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/5c/b5/0737c1f2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kuzan</span>
+                            </div>
+                            <div class="bd">go里面有没有分段锁的字典实现呢 <br></div>
+                            <span class="time">2018-10-09 22:28</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">没有，sync.Map也不是分段锁实现的，如果想看分段锁实现可以看我的《Go并发编程实战》第二版中的例子。</p>
+                                <p class="reply-time">2018-10-15 12:45</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/53/14/2b93d757.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">colonel</span>
+                            </div>
+                            <div class="bd">哈希桶怎么存储的，是数组吗？碰撞之后的键值又是怎么存储的，形成链表吗？删除机制中，是删除链表中节点吗？<br>建议，不要大篇幅讨论存储性能，可以对内部数据存储，插入，删除，读取机制更多分享 <br></div>
+                            <span class="time">2018-09-22 19:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这些文章里都有写。</p>
+                                <p class="reply-time">2018-09-23 16:15</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/40/69/f86a1526.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">慢熊胖胖跑</span>
+                            </div>
+                            <div class="bd">Go 语言的字典类型其实是一个哈希表（hash table）的特定实现。<br>————————————————-<br>为啥都是hash表了 那为啥map range遍历key还是无序的呢？ <br></div>
+                            <span class="time">2018-09-15 07:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/5b/43/edf22486.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">SuperP ❤ 飝</span>
+                            </div>
+                            <div class="bd">一个哈希表会持有一定数量的桶（bucket），那个新增加一个键值得时候，怎么去划分桶的？ <br></div>
+                            <span class="time">2018-09-13 15:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我记得文章里讲了。</p>
+                                <p class="reply-time">2018-09-15 09:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1c/96/8e4234df.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">斗转星移</span>
+                            </div>
+                            <div class="bd">&quot;也就是说，字典不会存储任何键值，只会存储它们的哈希值。&quot;  我也觉得这个说法不严谨，既然，&quot;内部结构&quot;是将键值对捆绑存的，那字典就是存了键，除非&quot;内部结构&quot;不属于字典？ 可能没理解到，请郝大指点迷津 <br></div>
+                            <span class="time">2018-09-04 11:53</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">好吧，可以说，不会独立存储键的值。</p>
+                                <p class="reply-time">2018-09-04 19:55</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">extraterrestrial！！</span>
+                            </div>
+                            <div class="bd">函数类型为啥不能判等呢，函数头相同就认为相等不行么？ <br></div>
+                            <span class="time">2018-09-04 08:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这是Go语言的规定，没必要纠结，你完全用类型断言去判断啊。</p>
+                                <p class="reply-time">2018-09-04 19:44</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/5b/aa/777d7f88.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">谁谁</span>
+                            </div>
+                            <div class="bd">go中有接口类型，java中也有，python中的接口好像是说要定义成抽象基类！能说下这个接口到底是个什么东西吗？不太了解！ <br></div>
+                            <span class="time">2018-09-03 16:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/00/f4/cc5f0896.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Jowin</span>
+                            </div>
+                            <div class="bd">hash的实现通常用的是链表，这就没有办法并发操作 <br></div>
+                            <span class="time">2018-08-31 08:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/a4/76/585dc6b3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">hiyanxu</span>
+                            </div>
+                            <div class="bd">在map的创建中：<br>直接声明“var m map[int]string”的形式声明出来的m为nil；<br>采用make函数创建的map不为nil，可以进行添加键值对的操作。 <br></div>
+                            <span class="time">2018-12-16 23:23</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4e/83/5338bd77.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴承祖</span>
+                            </div>
+                            <div class="bd">希望剖析一下golang中哈希表的底层结构，似乎与常见的哈希链表实现方式很不一样 <br></div>
+                            <span class="time">2018-11-26 09:31</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

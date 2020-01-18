@@ -1,0 +1,411 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                04讲程序实体的那些事儿（上）
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/0b/8c/0b560bbf042b83c34433673e4e7a378c.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <h3>【Go语言代码较多，建议配合文章收听音频。】</h3><br></br><br></br><p>我已经为你打开了Go语言编程之门，并向你展示了“程序从初建到拆分，再到模块化”的基本演化路径。</p><p>一个编程老手让程序完成基本演化，可能也就需要几十分钟甚至十几分钟，因为他们一开始就会把车开到模块化编程的道路上。我相信，等你真正理解了这个过程之后，也会驾轻就熟的。</p><p>上述套路是通用的，不是只适用于Go语言。但从本篇开始，我会开始向你介绍Go语言中的各种特性以及相应的编程方法和思想。</p><hr></hr><p>我在讲解那两种源码文件基本编写方法的时候，声明和使用了一些程序实体。你也许已经若有所觉，也许还在云里雾里。没关系，我现在就与你一起梳理这方面的重点。</p><p>还记得吗？<strong>Go语言中的程序实体包括变量、常量、函数、结构体和接口。</strong> Go语言是静态类型的编程语言，所以我们在声明变量或常量的时候，都需要指定它们的类型，或者给予足够的信息，这样才可以让Go语言能够推导出它们的类型。</p><blockquote>
+<p><span class="reference">在Go语言中，变量的类型可以是其预定义的那些类型，也可以是程序自定义的函数、结构体或接口。常量的合法类型不多，只能是那些Go语言预定义的基本类型。它的声明方式也更简单一些。</span></p>
+</blockquote><p>好了，下面这个简单的问题你需要了解一下。</p><h2><strong><span class="orange">问题：声明变量有几种方式？</span></strong></h2><!-- [[[read_end]]] --><p>先看段代码。</p><pre><code>package main
+
+import (
+	&quot;flag&quot;
+	&quot;fmt&quot;
+)
+
+func main() {
+	var name string // [1]
+	flag.StringVar(&amp;name, &quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;) // [2]
+	flag.Parse()
+	fmt.Printf(&quot;Hello, %v!\n&quot;, name)
+}
+</code></pre><p>这是一个很简单的命令源码文件，我把它命名为demo7.go。它是demo2.go的微调版。我只是把变量<code>name</code>的声明和对<code>flag.StringVar</code>函数的调用，都移动到了<code>main</code>函数中，这分别对应代码中的注释<code>[1]</code>和<code>[2]</code>。</p><p>具体的问题是，除了<code>var name string</code>这种声明变量<code>name</code>的方式，还有其他方式吗？你可以选择性地改动注释<code>[1]</code>和<code>[2]</code>处的代码。</p><h2><strong>典型回答</strong></h2><p>这有几种做法，我在这里只说最典型的两种。</p><p><strong>第一种方式</strong>需要先对注释<code>[2]</code>处的代码稍作改动，把被调用的函数由<code>flag.StringVar</code>改为<code>flag.String</code>，传参的列表也需要随之修改，这是为了<code>[1]</code>和<code>[2]</code>处代码合并的准备工作。</p><pre><code>var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)
+</code></pre><p>合并后的代码看起来更简洁一些。我把注释<code>[1]</code>处的代码中的<code>string</code>去掉了，右边添加了一个<code>=</code>，然后再拼接上经过修改的<code>[2]</code>处代码。</p><p>我在调用<code>flag.String</code>函数的代码左边加了一个<code>*</code>，这是因为该函数返回的结果值类型是<code>*string</code>而不是<code>string</code>。类型<code>*string</code>代表的是字符串的指针类型，而不是字符串类型。</p><p>关于Go语言中的指针，我在后面会有专门的介绍。你在这里只需要知道，我通过一个“<code>*</code>”把这个字符串指针值指向的字符串值取出来了，然后通过赋值符号“<code>=</code>”把后者赋给了<code>name</code>变量。</p><p>好了，我想你已经基本理解了这行代码中的每一个部分。</p><p><strong>下面我接着说第二种方式。</strong>第二种方式与第一种方式非常类似，它基于第一种方式的代码，赋值符号<code>=</code>右边的代码不动，左边只留下<code>name</code>，再把<code>=</code>变成<code>:=</code>。</p><pre><code>name := *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)
+</code></pre><h2><strong>问题解析</strong></h2><p>这个问题的基本考点有两个。<strong>一个是你要知道Go语言中的类型推断，以及它在代码中的基本体现，另一个是短变量声明的用法。</strong></p><p>第一种方式中的代码在声明变量<code>name</code>的同时，还为它赋了值，而这时声明中并没有显式指定<code>name</code>的类型。</p><p>还记得吗？之前的变量声明语句是<code>var name string</code>。这里利用了Go语言自身的类型推断而省去了<code>string</code>。</p><blockquote>
+<p><span class="reference">简单地说，类型推断是一种编程语言在编译期自动解释表达式类型的能力。什么是表达式？详细的解释你可以参看Go语言规范中的<a href="https://golang.google.cn/ref/spec#Expressions">表达式</a>和<a href="https://golang.google.cn/ref/spec#Expression_statements">表达式语句</a>章节。我在这里就不赘述了。</span></p>
+</blockquote><p>你可以认为，表达式类型就是对表达式进行求值后得到结果的类型。Go语言中的类型推断是很简约的，这也是Go语言整体的风格。</p><p>它只能用于对变量或常量的初始化，就像上述回答中描述的那样。对<code>flag.String</code>函数的调用其实就是一个调用表达式，而这个表达式的类型是<code>*string</code>，即字符串的指针类型。</p><p>这也是调用<code>flag.String</code>函数后得到结果的类型。随后，Go语言把这个调用了<code>flag.String</code>函数的表达式类型，直接作为了变量<code>name</code>的类型，这就是“推断”一词所指代的操作了。</p><p>至于第二种方式所用的短变量声明，实际上就是Go语言的类型推断再加上一点点语法糖。</p><p>我们只能在函数体内部使用短变量声明。在编写<code>if</code>、<code>for</code>或<code>switch</code>语句的时候，我们经常把它安插在初始化子句中，并用来声明一些临时的变量。而相比之下，第一种方式更加通用，它可以被用在任何地方。</p><p><img src="https://static001.geekbang.org/resource/image/b7/bc/b7d73fdce13a3a5f2d56d0b95f2c8cbc.png" alt=""></p><p>（变量的多种声明方式）</p><p>短变量声明还有其他的玩法，我稍后就会讲到。</p><h2><strong>知识扩展</strong></h2><h3><strong><span class="orange">1. Go语言的类型推断可以带来哪些好处？</span></strong></h3><p>如果面试官问你这个问题，你应该怎样回答？</p><p>当然，在写代码时，我们通过使用Go语言的类型推断，而节省下来的键盘敲击次数几乎可以忽略不计。但它真正的好处，往往会体现在我们写代码之后的那些事情上，比如代码重构。</p><p>为了更好的演示，我们先要做一点准备工作。我们依然通过调用一个函数在声明<code>name</code>变量的同时为它赋值，但是这个函数不是<code>flag.String</code>，而是由我们自己定义的某个函数，比如叫<code>getTheFlag</code>。</p><pre><code>package main
+
+import (
+	&quot;flag&quot;
+	&quot;fmt&quot;
+)
+
+func main() {
+	var name = getTheFlag()
+	flag.Parse()
+	fmt.Printf(&quot;Hello, %v!\n&quot;, *name)
+}
+
+func getTheFlag() *string {
+	return flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)
+}
+</code></pre><p>我们可以用<code>getTheFlag</code>函数包裹（或者说包装）那个对<code>flag.String</code>函数的调用，并把其结果直接作为<code>getTheFlag</code>函数的结果，结果的类型是<code>*string</code>。</p><p>这样一来，<code>var name =</code>右边的表达式，可以变为针对<code>getTheFlag</code>函数的调用表达式了。这实际上是对“声明并赋值<code>name</code>变量的那行代码”的重构。</p><blockquote>
+<p><span class="reference">我们通常把不改变某个程序与外界的任何交互方式和规则，而只改变其内部实现”的代码修改方式，叫做对该程序的重构。重构的对象可以是一行代码、一个函数、一个功能模块，甚至一个软件系统。</span></p>
+</blockquote><p>好了，在准备工作做完之后，你会发现，你可以随意改变<code>getTheFlag</code>函数的内部实现，及其返回结果的类型，而不用修改<code>main</code>函数中的任何代码。</p><p>这个命令源码文件依然可以通过编译，并且构建和运行也都不会有问题。也许你能感觉得到，这是一个关于程序灵活性的质变。</p><p>我们不显式地指定变量<code>name</code>的类型，使得它可以被赋予任何类型的值。也就是说，变量<code>name</code>的类型可以在其初始化时，由其他程序动态地确定。</p><p>在你改变<code>getTheFlag</code>函数的结果类型之后，Go语言的编译器会在你再次构建该程序的时候，自动地更新变量<code>name</code>的类型。如果你使用过<code>Python</code>或<code>Ruby</code>这种动态类型的编程语言的话，一定会觉得这情景似曾相识。</p><p>没错，通过这种类型推断，你可以体验到动态类型编程语言所带来的一部分优势，即程序灵活性的明显提升。但在那些编程语言中，这种提升可以说是用程序的可维护性和运行效率换来的。</p><p>Go语言是静态类型的，所以一旦在初始化变量时确定了它的类型，之后就不可能再改变。这就避免了在后面维护程序时的一些问题。另外，请记住，这种类型的确定是在编译期完成的，因此不会对程序的运行效率产生任何影响。</p><p>现在，你应该已经对这个问题有一个比较深刻的理解了。</p><p>如果只用一两句话回答这个问题的话，我想可以是这样的：Go语言的类型推断可以明显提升程序的灵活性，使得代码重构变得更加容易，同时又不会给代码的维护带来额外负担（实际上，它恰恰可以避免散弹式的代码修改），更不会损失程序的运行效率。</p><h3><strong><span class="orange">2. 变量的重声明是什么意思？</span></strong></h3><p>这涉及了短变量声明。通过使用它，我们可以对同一个代码块中的变量进行重声明。</p><blockquote>
+<p><span class="reference">既然说到了代码块，我先来解释一下它。在Go语言中，代码块一般就是一个由花括号括起来的区域，里面可以包含表达式和语句。Go语言本身以及我们编写的代码共同形成了一个非常大的代码块，也叫全域代码块。</span></p>
+<p><span class="reference">这主要体现在，只要是公开的全局变量，都可以被任何代码所使用。相对小一些的代码块是代码包，一个代码包可以包含许多子代码包，所以这样的代码块也可以很大。</span></p>
+<p><span class="reference">接下来，每个源码文件也都是一个代码块，每个函数也是一个代码块，每个<code>if</code>语句、<code>for</code>语句、<code>switch</code>语句和<code>select</code>语句都是一个代码块。甚至，<code>switch</code>或<code>select</code>语句中的<code>case</code>子句也都是独立的代码块。</span></p>
+<p><span class="reference">走个极端，我就在<code>main</code>函数中写一对紧挨着的花括号算不算一个代码块？当然也算，这甚至还有个名词，叫“空代码块”。</span></p>
+</blockquote><p>回到变量重声明的问题上。其含义是对已经声明过的变量再次声明。变量重声明的前提条件如下。</p><ol>
+<li>由于变量的类型在其初始化时就已经确定了，所以对它再次声明时赋予的类型必须与其原本的类型相同，否则会产生编译错误。</li>
+<li>变量的重声明只可能发生在某一个代码块中。如果与当前的变量重名的是外层代码块中的变量，那么就是另外一种含义了，我在下一篇文章中会讲到。</li>
+<li>变量的重声明只有在使用短变量声明时才会发生，否则也无法通过编译。如果要在此处声明全新的变量，那么就应该使用包含关键字<code>var</code>的声明语句，但是这时就不能与同一个代码块中的任何变量有重名了。</li>
+<li>被“声明并赋值”的变量必须是多个，并且其中至少有一个是新的变量。这时我们才可以说对其中的旧变量进行了重声明。</li>
+</ol><p>这样来看，变量重声明其实算是一个语法糖（或者叫便利措施）。它允许我们在使用短变量声明时不用理会被赋值的多个变量中是否包含旧变量。可以想象，如果不这样会多写不少代码。</p><p>我把一个简单的例子写在了“Golang_Puzzlers”项目的<code>puzzlers/article4/q3</code>包中的demo9.go文件中，你可以去看一下。</p><p>这其中最重要的两行代码如下：</p><pre><code>var err error
+n, err := io.WriteString(os.Stdout, &quot;Hello, everyone!\n&quot;)
+</code></pre><p>我使用短变量声明对新变量<code>n</code>和旧变量<code>err</code>进行了“声明并赋值”，这时也是对后者的重声明。</p><h2><strong>总结</strong></h2><p>在本篇中，我们聚焦于最基本的Go语言程序实体：变量。并详细解说了变量声明和赋值的基本方法，及其背后的重要概念和知识。我们使用关键字<code>var</code>和短变量声明，都可以实现对变量的“声明并赋值”。</p><p>这两种方式各有千秋，有着各自的特点和适用场景。前者可以被用在任何地方，而后者只能被用在函数或者其他更小的代码块中。</p><p>不过，通过前者我们无法对已有的变量进行重声明，也就是说它无法处理新旧变量混在一起的情况。不过它们也有一个很重要的共同点，即：基于类型推断，Go语言的类型推断只应用在了对变量或常量的初始化方面。</p><h2><strong>思考题</strong></h2><p>本次的思考题只有一个：如果与当前的变量重名的是外层代码块中的变量，那么这意味着什么？</p><p>这道题对于你来说可能有些难，不过我鼓励你多做几次试验试试，你可以在代码中多写一些打印语句，然后运行它，并记录下每次试验的结果。如果有疑问也一定要写下来，答案将在下篇文章中揭晓。</p><p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p><p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4a/d4/a3231668.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Shawn</span>
+                            </div>
+                            <div class="bd">当前变量覆盖外层变量 <br></div>
+                            <span class="time">2018-08-17 00:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/43/fd/69beb2af.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈悬高</span>
+                            </div>
+                            <div class="bd">所谓“变量的重声明”容易引发歧义，而且也不容易理解。如果没有为变量分配一块新的内存区域，那么用声明是不恰当的。在《Go 语言圣经》一书中将短声明的这种特性称为赋值。个人总结如下：<br><br>在使用短变量声明的时候，你可能想要同时对一个已有的变量赋值，类似使用 `=` 进行多重赋值那样（如 `i, j = 2, 3`）。所以，Go 为短声明语法提供了一个语法糖（或者叫便利措施）：短变量声明不需要声明所有在左边的变量。如果多个变量在同一个词法块中声明，那么对于这些变量，短声明的行为等同于*赋值*。<br><br>比如，在下面的代码中，第一条语句声明了 `in` 和 `err`。第二条语句仅声明了 `out`，但向已有的 `err` 变量进行赋值。<br><br>```<br>in, err := os.Open(infile)<br>&#47;&#47; ...<br>out, err := os.Create(outfile)<br>```<br><br>但是这种行为需要一些前提条件：<br><br>*   要赋值的变量必须声明在同一个词法块中。<br><br>	如果两个变量位于不同的词法块中，短声明语法表示的仍然是“声明”而非“赋值”。此时它们就是重名的变量了，而且内层变量会“覆盖”外部变量。<br><br>*   必须至少声明一个新变量，否则代码将不能编译通过。<br><br>	原因很简单，如果不用声明新变量而仅仅是为了赋值，那么直接使用赋值符 `=` 即可：<br><br>	```<br>	f, err := os.Open(infile)<br>	&#47;&#47; ...<br>	&#47;&#47; f, err := os.Create(outfile) &#47;&#47; 编译错误：没有新变量<br>	f, err = os.Create(outfile)    &#47;&#47; 使用普通的赋值语句即可<br>	``` <br></div>
+                            <span class="time">2018-10-06 10:35</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4c/6f/c2649c60.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Andy Chen</span>
+                            </div>
+                            <div class="bd">“你可以随意改变getTheFlag函数的内部实现及其返回结果的类型，而不用修改main函数中的任何代码。”这个说法只在你给定的例子下面成立，事实上main函数的代码已经假设getTheFlag会返回字符串，因为它在用返回值，如果getTheFlag一开始是返回某种结构体指针，main使用了这个指针指向的一系列成员，然后你再改getTheFlag返回类型看看。类型推断已经深入大多数语言，包括c++，C#，等等，但它没办法解决所谓的使用者不需要改变任何代码就能进行重构 <br></div>
+                            <span class="time">2018-08-17 02:39</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">重构有很多种，有大有小啊。</p>
+                                <p class="reply-time">2018-08-17 20:01</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/91/04/065b82b4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">玉明</span>
+                            </div>
+                            <div class="bd">应该是没影响的，不同栈上的变量 <br></div>
+                            <span class="time">2018-08-17 08:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/63/7b/0eb34db9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">xiaolonghuster</span>
+                            </div>
+                            <div class="bd">按照老师的demo，不能获取命令参数，只能得到默认值，改成下面这样可以:我用的是1.10.3版本，是不是版本问题<br><br>func main() {<br><br>	var name = getTheFlag()<br>	<br>	flag.Parse()<br>	fmt.Printf(&quot;Hello, %v!\n&quot;, *name)<br>}<br><br>func getTheFlag() *string {<br><br>	return flag.String(&quot;name&quot;, &quot;everybody&quot;, &quot;The greeting object.&quot;)<br>} <br></div>
+                            <span class="time">2018-08-17 11:52</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这里确实是写错了，你改的很对，谢谢指正！我想邀请你进入本专栏的微信讨论群。你知道入群方法吗？</p>
+                                <p class="reply-time">2018-08-17 19:36</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/44/47/3ddb94d0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿杜</span>
+                            </div>
+                            <div class="bd">go支持类型推断；<br>两种变量定义方式：var完整方式、:=短变量定义；<br>重声明只可以在短变量定义中出现，并且是在多个变量声明中出现（给新变量赋值，给旧变量赋新值） <br></div>
+                            <span class="time">2018-08-17 00:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/40/69/f86a1526.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">慢熊胖胖跑</span>
+                            </div>
+                            <div class="bd">由于go是值传递，因此即使传入重名变量，一般在代码块中变量可以正常使用，但是值得改变不会引起变化，因为变量传入后，代码块中赋予了新的地址。 除非如同case3一样中传入变量的指针，然后才会使用相同的变量地址，修改变量的值。func reusevarnam1(var1 int) {    var1 = 3 + var1    fmt.Printf(&quot;Inside reusevarnam1,var1 is %d, address is %s\n&quot;, var1, &amp;var1)}<br>func reusevarnam2(var2 int) {    for var2 := 1; var2 &lt; 3; var2++ {        fmt.Println(&quot;reusevarnam2 ...&quot;)        fmt.Printf(&quot;Inside reusevarnam2,var2 is %d, address is %s\n&quot;, var2, &amp;var2)    }    fmt.Println(&quot;reusevarnam2&quot;)}<br>func reusevarnam3(var3 *int) {    *var3 = *var3 + 100    fmt.Printf(&quot;Inside reusevarnam2,var3 is %d, address is %s\n&quot;, *var3, var3)} <br></div>
+                            <span class="time">2018-08-18 23:48</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你这一堆❀是啥？：）</p>
+                                <p class="reply-time">2018-08-19 14:30</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/99/c9/a7c77746.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">冰激凌的眼泪</span>
+                            </div>
+                            <div class="bd">var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)<br>这一句是不是导致name是个副本，parse后也不会变？请郝老师确认一下 <br></div>
+                            <span class="time">2018-08-18 21:02</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">已经修正了。</p>
+                                <p class="reply-time">2018-08-19 14:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/49/55/b6c9c0f4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">liyinda0000</span>
+                            </div>
+                            <div class="bd">    在article4&#47;q1&#47;demo7.go中在使用{方式1}中，发现name传参未能正常打印，我使用的go版本1.9.4<br>    解决办法： 13行 *flag.String改成flag.String；19行 fmt.Printf(&quot;Hello, %v!\n&quot;, name) 将name改成*name<br>    问题思考：应该是文中未深入探讨‘指针变量’的问题，flag.String()得到的是指针变量，*代表取值符，*name将指针变量中的值取出（运行&amp;name发现为内存地址，&amp;代表取地址符），上述问题的出现原因请您指点？另如何加入微信学习群，望早日加入组织，哈哈 <br></div>
+                            <span class="time">2018-09-07 15:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">微信学习群已经满了，不过可以去开发者头条App搜索GoHackers并加入组织。这个组织是我个人在几年前发起的。</p>
+                                <p class="reply-time">2018-09-08 13:54</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/aa/21/81ee4e60.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">lfn</span>
+                            </div>
+                            <div class="bd">变量解析由内向外，内层找不到才回去外层找。 <br></div>
+                            <span class="time">2018-08-17 02:26</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/2d/18/67911770.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">objcoding</span>
+                            </div>
+                            <div class="bd">类型推断只能在局部生效，相当于Java的局部变量，而在函数体外的声明变量相当于Java的实例变量 <br></div>
+                            <span class="time">2018-08-17 01:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/de/83/d8df2dd8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Jevade</span>
+                            </div>
+                            <div class="bd">string 是值传递，所以调用flag.String函数的时候，本身会构造一个string <br>var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)<br>传递给name的是一个string的副本，和原本的string只是值一样，地址并不同，后面采用flag.Parse也就不会改变name，因此name还是默认值。<br>不知道这样理解对不对？ <br></div>
+                            <span class="time">2018-11-22 22:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/48/07/af4919df.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小木</span>
+                            </div>
+                            <div class="bd">var name = *flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;) <br>这句代码不能正确打印 name 是为什么呢？ <br></div>
+                            <span class="time">2018-10-10 15:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎❤️</span>
+                            </div>
+                            <div class="bd">重声明的目的是什么？可以带来什么好处呢？<br>是不是说只有在多个变量声明并赋初值的场景才有用？这样把已经声明过的变量重新利用，而不用再引入一个新的变量？<br>就比如你举的例子中，n, err := ... , 如果不可以重声明，那么err写在 :=前面就不合适了。是这个目的吗？ <br></div>
+                            <span class="time">2018-10-02 19:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">charlesgogo01</span>
+                            </div>
+                            <div class="bd">name := *flag.string（）这儿为啥会有*，本来返回应该是个变量值，这样是传递地址吗？ <br></div>
+                            <span class="time">2018-09-03 23:50</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Go里面没有传递地址这种说法。*在这里是取值操作符。</p>
+                                <p class="reply-time">2018-09-04 19:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/90/23/5c74e9b7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">$侯</span>
+                            </div>
+                            <div class="bd">内层和外层变量的作用域不一样，修改了内层的不会对外层重名的变量产生影响 <br></div>
+                            <span class="time">2018-08-20 18:26</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/2f/fd/dead7549.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">AJIE</span>
+                            </div>
+                            <div class="bd">思考题:<br>进入到一个代码块后，就进入了一个新的作用域。不会发生合法的重声明，也不会报错不合法的重声明。 <br></div>
+                            <span class="time">2018-08-20 12:51</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/66/4b/44f62fbe.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">MKing</span>
+                            </div>
+                            <div class="bd">思考题: 如果内层变量使用:=去定义 会产生内部变量 但不影响外部变量  如果使用= 则会直接使用外部变量操作 会对外部变量造成修改 不知道对不对 <br></div>
+                            <span class="time">2018-08-19 21:37</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对的，但是内层的赋值用=的时候不能加var，加了var还是新变量。</p>
+                                <p class="reply-time">2018-08-20 14:45</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4e/68/5e3b5b90.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张玉锡</span>
+                            </div>
+                            <div class="bd">demo9.go里的赋值，左边是两个变量n和err，一个是短变量，一个是声明变量，为啥都可以用:=的方式赋值？ <br></div>
+                            <span class="time">2018-08-19 12:06</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这就是本篇文章所以说的变量重声明。</p>
+                                <p class="reply-time">2018-08-20 14:47</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4a/7b/e97b26a4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张震</span>
+                            </div>
+                            <div class="bd">这个redefine跟用var声明后赋值没啥区别吧 <br></div>
+                            <span class="time">2018-08-19 00:04</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">var是没法参与变量重声明的，但是可以参与可重名变量的声明。</p>
+                                <p class="reply-time">2018-08-19 14:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

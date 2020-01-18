@@ -1,0 +1,389 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.5;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x">更多课程请加QQ1046877154，微信loveu_110获取</p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                02讲命令源码文件
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/37/b1/3793770202d7834838dbb4e2f6a60bb1.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <h3>【Go语言代码较多，建议配合文章收听音频。】</h3><p>我们已经知道，环境变量GOPATH指向的是一个或多个工作区，每个工作区中都会有以代码包为基本组织形式的源码文件。</p><p><strong>这里的源码文件又分为三种，即：命令源码文件、库源码文件和测试源码文件，它们都有着不同的用途和编写规则。</strong> 我在<a href="https://time.geekbang.org/column/article/13540?utm_source=weibo&amp;utm_medium=xuxiaoping&amp;utm_campaign=promotion&amp;utm_content=columns">“预习篇”的基础知识图</a>介绍过这三种文件的基本情况。</p><p><img src="https://static001.geekbang.org/resource/image/9d/cb/9d08647d238e21e7184d60c0afe5afcb.png" alt=""></p><p>（长按保持大图查看）</p><p>今天，我们就沿着<strong>命令源码文件</strong>的知识点，展开更深层级的学习。</p><hr></hr><p>一旦开始学习用编程语言编写程序，我们就一定希望在编码的过程中及时地得到反馈，只有这样才能清楚对错。实际上，我们的有效学习和进步，都是通过不断地接受反馈和执行修正实现的。</p><p>对于Go语言学习者来说，你在学习阶段中，也一定会经常编写可以直接运行的程序。这样的程序肯定会涉及命令源码文件的编写，而且，命令源码文件也可以很方便地用<code>go run</code>命令启动。</p><p>那么，<strong>我今天的问题就是：命令源码文件的用途是什么，怎样编写它？</strong></p><p>这里，我给出你一个<strong>参考的回答</strong>：命令源码文件是程序的运行入口，是每个可独立运行的程序必须拥有的。我们可以通过构建或安装，生成与其对应的可执行文件，后者一般会与该命令源码文件的直接父目录同名。</p><p><strong>如果一个源码文件声明属于<code>main</code>包，并且包含一个无参数声明且无结果声明的<code>main</code>函数，那么它就是命令源码文件。</strong> 就像下面这段代码：</p><!-- [[[read_end]]] --><pre><code>package main
+
+import &quot;fmt&quot;
+
+func main() {
+	fmt.Println(&quot;Hello, world!&quot;)
+}
+</code></pre><p>如果你把这段代码存成demo1.go文件，那么运行<code>go run demo1.go</code>命令后就会在屏幕（标准输出）中看到<code>Hello, world!</code></p><blockquote>
+<p><span class="reference">当需要模块化编程时，我们往往会将代码拆分到多个文件，甚至拆分到不同的代码包中。但无论怎样，对于一个独立的程序来说，命令源码文件永远只会也只能有一个。如果有与命令源码文件同包的源码文件，那么它们也应该声明属于<code>main</code>包。</span></p>
+</blockquote><h2>问题解析</h2><p>命令源码文件如此重要，以至于它毫无疑问地成为了我们学习Go语言的第一助手。不过，只会打印<code>Hello, world</code>是远远不够的，咱们千万不要成为“Hello, world”党。既然决定学习Go语言，你就应该从每一个知识点深入下去。</p><p>无论是Linux还是Windows，如果你用过命令行（command line）的话，肯定就会知道几乎所有命令（command）都是可以接收参数（argument）的。通过构建或安装命令源码文件，生成的可执行文件就可以被视为“命令”，既然是命令，那么就应该具备接收参数的能力。</p><p>下面，我就带你深入了解一下与命令参数的接收和解析有关的一系列问题。</p><h2>知识精讲</h2><h3>1. 命令源码文件怎样接收参数</h3><p>我们先看一段不完整的代码：</p><pre><code>package main
+
+import (
+	// 需在此处添加代码。[1]
+	&quot;fmt&quot;
+)
+
+var name string
+
+func init() {
+	// 需在此处添加代码。[2]
+}
+
+func main() {
+	// 需在此处添加代码。[3]
+	fmt.Printf(&quot;Hello, %s!\n&quot;, name)
+}
+
+</code></pre><p><strong>如果邀请你帮助我，在注释处添加相应的代码，并让程序实现”根据运行程序时给定的参数问候某人”的功能，你会打算怎样做？</strong></p><p>如果你知道做法，请现在就动手实现它。如果不知道也不要着急，咱们一起来搞定。</p><p>首先，Go语言标准库中有一个代码包专门用于接收和解析命令参数。这个代码包的名字叫<code>flag</code>。</p><p>我之前说过，如果想要在代码中使用某个包中的程序实体，那么应该先导入这个包。因此，我们需要在<code>[1]</code>处添加代码<code>"flag"</code>。注意，这里应该在代码包导入路径的前后加上英文半角的引号。如此一来，上述代码导入了<code>flag</code>和<code>fmt</code>这两个包。</p><p>其次，人名肯定是由字符串代表的。所以我们要在<code>[2]</code>处添加调用<code>flag</code>包的<code>StringVar</code>函数的代码。就像这样：</p><pre><code>flag.StringVar(&amp;name, &quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)
+</code></pre><p>函数<code>flag.StringVar</code>接受4个参数。</p><p>第1个参数是用于存储该命令参数值的地址，具体到这里就是在前面声明的变量<code>name</code>的地址了，由表达式<code>&amp;name</code>表示。</p><p>第2个参数是为了指定该命令参数的名称，这里是<code>name</code>。</p><p>第3个参数是为了指定在未追加该命令参数时的默认值，这里是<code>everyone</code>。</p><p>至于第4个函数参数，即是该命令参数的简短说明了，这在打印命令说明时会用到。</p><p>顺便说一下，还有一个与<code>flag.StringVar</code>函数类似的函数，叫<code>flag.String</code>。这两个函数的区别是，后者会直接返回一个已经分配好的用于存储命令参数值的地址。如果使用它的话，我们就需要把</p><pre><code>var name string
+</code></pre><p>改为</p><pre><code>var name = flag.String(&quot;name&quot;, &quot;everyone&quot;, &quot;The greeting object.&quot;)
+</code></pre><p>所以，如果我们使用<code>flag.String</code>函数就需要改动原有的代码。这样并不符合上述问题的要求。</p><p>再说最后一个填空。我们需要在<code>[3]</code>处添加代码<code>flag.Parse()</code>。函数<code>flag.Parse</code>用于真正解析命令参数，并把它们的值赋给相应的变量。</p><p>对该函数的调用必须在所有命令参数存储载体的声明（这里是对变量<code>name</code>的声明）和设置（这里是在<code>[2]</code>处对<code>flag.StringVar</code>函数的调用）之后，并且在读取任何命令参数值之前进行。</p><p>正因为如此，我们最好把<code>flag.Parse()</code>放在<code>main</code>函数的函数体的第一行。</p><h3>2. 怎样在运行命令源码文件的时候传入参数，又怎样查看参数的使用说明</h3><p>如果我们把上述代码存成名为demo2.go的文件，那么运行如下命令就可以为参数<code>name</code>传值：</p><pre><code>go run demo2.go -name=&quot;Robert&quot;
+
+</code></pre><p>运行后，打印到标准输出（stdout）的内容会是：</p><pre><code>Hello, Robert!
+</code></pre><p>另外，如果想查看该命令源码文件的参数说明，可以这样做：</p><pre><code>$ go run demo2.go --help
+</code></pre><p>其中的<code>$</code>表示我们是在命令提示符后运行<code>go run</code>命令的。运行后输出的内容会类似：</p><pre><code>Usage of /var/folders/ts/7lg_tl_x2gd_k1lm5g_48c7w0000gn/T/go-build155438482/b001/exe/demo2:
+ -name string
+    The greeting object. (default &quot;everyone&quot;)
+exit status 2
+</code></pre><p>你可能不明白下面这段输出代码的意思。</p><pre><code>/var/folders/ts/7lg_tl_x2gd_k1lm5g_48c7w0000gn/T/go-build155438482/b001/exe/demo2
+</code></pre><p>这其实是<code>go run</code>命令构建上述命令源码文件时临时生成的可执行文件的完整路径。</p><p>如果我们先构建这个命令源码文件再运行生成的可执行文件，像这样：</p><pre><code>$ go build demo2.go
+$ ./demo2 --help
+</code></pre><p>那么输出就会是</p><pre><code>Usage of ./demo2:
+ -name string
+    The greeting object. (default &quot;everyone&quot;)
+</code></pre><h3>3. 怎样自定义命令源码文件的参数使用说明</h3><p>这有很多种方式，最简单的一种方式就是对变量<code>flag.Usage</code>重新赋值。<code>flag.Usage</code>的类型是<code>func()</code>，即一种无参数声明且无结果声明的函数类型。</p><p><code>flag.Usage</code>变量在声明时就已经被赋值了，所以我们才能够在运行命令<code>go run demo2.go --help</code>时看到正确的结果。</p><p>注意，对<code>flag.Usage</code>的赋值必须在调用<code>flag.Parse</code>函数之前。</p><p>现在，我们把demo2.go另存为demo3.go，然后在<code>main</code>函数体的开始处加入如下代码。</p><pre><code>flag.Usage = func() {
+ fmt.Fprintf(os.Stderr, &quot;Usage of %s:\n&quot;, &quot;question&quot;)
+ flag.PrintDefaults()
+}
+</code></pre><p>那么当运行</p><pre><code>$ go run demo3.go --help
+</code></pre><p>后，就会看到</p><pre><code>Usage of question:
+ -name string
+    The greeting object. (default &quot;everyone&quot;)
+exit status 2
+</code></pre><p>现在再深入一层，我们在调用<code>flag</code>包中的一些函数（比如<code>StringVar</code>、<code>Parse</code>等等）的时候，实际上是在调用<code>flag.CommandLine</code>变量的对应方法。</p><p><code>flag.CommandLine</code>相当于默认情况下的命令参数容器。所以，通过对<code>flag.CommandLine</code>重新赋值，我们可以更深层次地定制当前命令源码文件的参数使用说明。</p><p>现在我们把<code>main</code>函数体中的那条对<code>flag.Usage</code>变量的赋值语句注销掉，然后在<code>init</code>函数体的开始处添加如下代码：</p><pre><code>flag.CommandLine = flag.NewFlagSet(&quot;&quot;, flag.ExitOnError)
+flag.CommandLine.Usage = func() {
+	fmt.Fprintf(os.Stderr, &quot;Usage of %s:\n&quot;, &quot;question&quot;)
+	flag.PrintDefaults()
+}
+</code></pre><p>再运行命令<code>go run demo3.go --help</code>后，其输出会与上一次的输出的一致。不过后面这种定制的方法更加灵活。比如，当我们把为<code>flag.CommandLine</code>赋值的那条语句改为</p><pre><code>flag.CommandLine = flag.NewFlagSet(&quot;&quot;, flag.PanicOnError)
+</code></pre><p>后，再运行<code>go run demo3.go --help</code>命令就会产生另一种输出效果。这是由于我们在这里传给<code>flag.NewFlagSet</code>函数的第二个参数值是<code>flag.PanicOnError</code>。<code>flag.PanicOnError</code>和<code>flag.ExitOnError</code>都是预定义在<code>flag</code>包中的常量。</p><p><code>flag.ExitOnError</code>的含义是，告诉命令参数容器，当命令后跟<code>--help</code>或者参数设置的不正确的时候，在打印命令参数使用说明后以状态码<code>2</code>结束当前程序。</p><p>状态码<code>2</code>代表用户错误地使用了命令，而<code>flag.PanicOnError</code>与之的区别是在最后抛出“运行时恐慌（panic）”。</p><p>上述两种情况都会在我们调用<code>flag.Parse</code>函数时被触发。顺便提一句，“运行时恐慌”是Go程序错误处理方面的概念。关于它的抛出和恢复方法，我在本专栏的后续部分中会讲到。</p><p>下面再进一步，我们索性不用全局的<code>flag.CommandLine</code>变量，转而自己创建一个私有的命令参数容器。我们在函数外再添加一个变量声明：</p><pre><code>var cmdLine = flag.NewFlagSet(&quot;question&quot;, flag.ExitOnError)
+</code></pre><p>然后，我们把对<code>flag.StringVar</code>的调用替换为对<code>cmdLine.StringVar</code>调用，再把<code>flag.Parse()</code>替换为<code>cmdLine.Parse(os.Args[1:])</code>。</p><p>其中的<code>os.Args[1:]</code>指的就是我们给定的那些命令参数。这样做就完全脱离了<code>flag.CommandLine</code>。<code>*flag.FlagSet</code>类型的变量<code>cmdLine</code>拥有很多有意思的方法。你可以去探索一下。我就不在这里一一讲述了。</p><p>这样做的好处依然是更灵活地定制命令参数容器。但更重要的是，你的定制完全不会影响到那个全局变量<code>flag.CommandLine</code>。</p><p><strong>总结</strong></p><p>恭喜你！你现在已经走出了Go语言编程的第一步。你可以用Go编写命令，并可以让它们像众多操作系统命令那样被使用，甚至可以把它们嵌入到各种脚本中。</p><p>虽然我为你讲解了命令源码文件的基本编写方法，并且也谈到了为了让它接受参数而需要做的各种准备工作，但这并不是全部。</p><p>别担心，我在后面会经常提到它的。另外，如果你想详细了解<code>flag</code>包的用法，可以到<a href="https://golang.google.cn/pkg/flag/">这个网址</a>查看文档。或者直接使用<code>godoc</code>命令在本地启动一个Go语言文档服务器。怎样使用<code>godoc</code>命令？你可以参看<a href="https://github.com/hyper0x/go_command_tutorial/blob/master/0.5.md">这里</a>。</p><h2>思考题</h2><p>我们已经见识过为命令源码文件传入字符串类型的参数值的方法，那还可以传入别的吗？这就是今天我留下的思考题。</p><ol>
+<li>默认情况下，我们可以让命令源码文件接受哪些类型的参数值？</li>
+<li>我们可以把自定义的数据类型作为参数值的类型吗？如果可以，怎样做？</li>
+</ol><p>你可以通过查阅文档获得第一个问题的答案。记住，快速查看和理解文档是一项必备的技能。</p><p>至于第二个问题，你回答起来可能会有些困难，因为这涉及了另一个问题：“怎样声明自己的数据类型？”这个问题我在专栏的后续部分中也会讲到。如果是这样，我希望你记下它和这里说的另一问题，并在能解决后者之后再来回答前者。</p><p><a href="https://github.com/hyper0x/Golang_Puzzlers">戳此查看Go语言专栏文章配套详细代码。</a></p><p><img src="https://static001.geekbang.org/resource/image/35/48/358e4e8578a706598e18a7dfed3ed648.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/fb/44/8b2600fd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">咖啡色的羊驼</span>
+                            </div>
+                            <div class="bd">看完本文，记住的两点:<br>1.源码文件分为三种:命令,库，测试。<br>2.编写命令源码文件的关键包: flag。<br><br>回答下问题:<br>1.命令源码文件支持的参数:<br>      int(int|int64|uint|uint64),<br>      float(float|float64)<br>      string,<br>      bool,<br>      duration(时间),<br>      var(自定义)<br>2.关键就是使用flag.var()，关键点在于需要实现flag包的Value接口。<br><br><br> <br></div>
+                            <span class="time">2018-08-13 01:48</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Dragoonium</span>
+                            </div>
+                            <div class="bd">我试着把参数增加到两个，然后试试运行结果<br>func init() {<br>  flag.StringVar(&amp;name, &quot;name1&quot;, &quot;ladies&quot;, &quot;The greeting object 1&quot;)<br>  flag.StringVar(&amp;name, &quot;name2&quot;, &quot;gentlemen&quot;, &quot;The greeting object 2&quot;)<br>}<br><br># go run test.go<br>Hello gentlemen!<br>和想像的一样，name2的默认值覆盖了name1的默认值<br><br># go run test.go -name1=Robert<br>Hello Robert!<br>和想像的略有不同，只指定了name1，没有指定name2，输出了name1的指定值，name2的默认值没有生效<br><br># go run test.go -name2=Jose<br>Hello Jose!<br>没毛病<br><br># go run test.go -name1=Robert -name2=Jose<br>Hello Jose!<br>没毛病<br><br># go run test.go -name2=Jose -name1=Robert<br>Hello Robert!<br>这有点奇怪了，输出的值是以参数的先后顺序为准的，而不是以flag.StringVar函数的顺序为准的 <br></div>
+                            <span class="time">2018-08-13 18:23</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/44/47/3ddb94d0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿杜</span>
+                            </div>
+                            <div class="bd">喜欢这种重实践和编码的风格，便于上手 <br></div>
+                            <span class="time">2018-08-13 10:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/27/2c/919e5773.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Abirdcfly</span>
+                            </div>
+                            <div class="bd">解答一下Dragoonium同学的疑惑，在flag包的文档里第一个example里就有你提到的这种情况，注释已经说明白了。<br><br>我不太精确的翻译一下：<br><br>两个flag分享一个变量时可以用来做命令参数缩写，由于初始化顺序未定义，所以要确保两者使用同一默认值，并且他们必须在init()函数中设置 <br></div>
+                            <span class="time">2018-08-14 00:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/3e/45/3879f334.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tron</span>
+                            </div>
+                            <div class="bd">go语言ide还是推荐goland <br></div>
+                            <span class="time">2018-09-05 11:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ac/a1/43d83698.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">云学</span>
+                            </div>
+                            <div class="bd">init在main之前执行，go程序的执行顺序是否可以讲下 <br></div>
+                            <span class="time">2018-08-13 18:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d2/b2/2f19b0ad.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">wjq310</span>
+                            </div>
+                            <div class="bd">demo3之后，要import os <br></div>
+                            <span class="time">2018-08-15 16:43</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/55/a0/65833509.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吉祥</span>
+                            </div>
+                            <div class="bd">undefined: os 怎么回事 <br></div>
+                            <span class="time">2018-08-13 22:42</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你好，请到GitHub上下载完整的源码文件。</p>
+                                <p class="reply-time">2018-08-15 20:16</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/4b/9c/882d6452.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">梦里追逐</span>
+                            </div>
+                            <div class="bd">咱们用的都是哪个IDE？ <br></div>
+                            <span class="time">2018-08-15 09:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你好，我用的是goland，但是代码不会依赖于IDE的，只会依赖于Go语言本身。免费的编辑器推荐vs code。</p>
+                                <p class="reply-time">2018-08-15 20:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/c8/2d/3dd499a9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">成都福哥</span>
+                            </div>
+                            <div class="bd">用自定义的cmdLine的时候，usage函数里的flag.PrintDefaults()应该相应的变成cmdLine.PrintDefaults()吧。 <br></div>
+                            <span class="time">2018-08-15 00:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/27/b6/abaf1cd0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">芒果</span>
+                            </div>
+                            <div class="bd">关于变量以标准输入为准的问题，我个人认为init中的定义只是定义了解析规则，真正执行解析是flag.Parse()时开始，因此以标准输出为准。想想我们自己写的时候会怎么实现，先获得输入如：-name1=a，然后解析为key=name1和value=a，然后走一个if，else判断，如果key匹配则对其赋值。所以就很好解释了。个人感觉自己的理解还是比较靠谱的，虽然没有研究源码。欢迎大神们交流 <br></div>
+                            <span class="time">2018-08-14 08:18</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/5d/5a/8e54a7c9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">松烽</span>
+                            </div>
+                            <div class="bd">自定义参数，还可以自己通过字符串转对象的方式实现 <br></div>
+                            <span class="time">2018-08-14 07:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/88/21/50b2418a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alan</span>
+                            </div>
+                            <div class="bd">感谢老师。感觉编码细节有些偏多了哈，希望多一些总结性和主观的内容。 <br></div>
+                            <span class="time">2018-08-13 09:42</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/14/c6/5ca3440a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">飞吧蛐蛐</span>
+                            </div>
+                            <div class="bd">问题1：通过flag库的提示，或者看flag包的用法，参数支持Bool&#47;Duration&#47;Float64&#47;Int&#47;Int64&#47;Uint&#47;Uint64，也支持Float32，猜测考虑到精度问题，flag没有支持float32。<br>问题2：参数值的类型可以是自定义的数据类型，使用实现flag包里的Value接口，然后使用flag.Var()实现。（flag源码里有提示，Value is the interface to the dynamic value stored in a flag）<br><br>PS：看一下flag包的用法和源码就能解答这两个问题了。 <br></div>
+                            <span class="time">2018-10-12 16:53</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/a9/d1/ffe56a3d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">mayunian</span>
+                            </div>
+                            <div class="bd">老师，今天试了一下类型转换。<br>为什么转换var x uint = uint(-1) 的时候会报错？<br>而var y int = -1<br>var x uint = uint(y)就不会报错呢？ <br></div>
+                            <span class="time">2018-08-30 05:03</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">-1是负数，编译器看出来了，帮你挑出来。y是int类型的变量，编译器不知道里面存的是不是负数，没法帮你挑出来。转换会成功结果会不正确。</p>
+                                <p class="reply-time">2018-09-01 19:55</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/46/3b/542405d7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">丸子说</span>
+                            </div>
+                            <div class="bd">从flag.stringvar&#47;flag.string到flag.commandline再到私有cmdline命令参数容器，循序渐进，由浅到深。 <br></div>
+                            <span class="time">2018-08-14 11:51</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/c8/ae/f2b0bc01.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">世风十三</span>
+                            </div>
+                            <div class="bd">flag.Usage 那部分有个 os 变量是 undefined 啊？ <br></div>
+                            <span class="time">2018-08-13 22:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/24/3e/692a93f7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">茶底</span>
+                            </div>
+                            <div class="bd">1.string int bool<br>2.使用flag.Var().重点在于实现Value接口。 <br></div>
+                            <span class="time">2018-08-13 12:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b4/0c/21185eca.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">五流诗人二手黑客</span>
+                            </div>
+                            <div class="bd">之前练习go时候写了一个将预定格式xml转换成sql的方法，感觉这个语言写起来很有趣 <br></div>
+                            <span class="time">2018-08-13 11:36</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/2d/18/67911770.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">objcoding</span>
+                            </div>
+                            <div class="bd">命令源码对应的包也是通过go install唯一能够生成可执行文件的包 <br></div>
+                            <span class="time">2018-08-13 08:32</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
